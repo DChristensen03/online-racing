@@ -7,19 +7,19 @@
 
 <svelte:head>
 	<link rel="icon" href={favicon} />
-	<title>Grade One Winner | Horse Racing Knowledge Quiz Game</title>
+	<title>Grade One Winner | Horse Racing Knowledge Game</title>
 	<meta
 		name="description"
-		content="Grade One Winner is a horse racing quiz game where you test your knowledge of top racehorses across multiple difficulty levels."
+		content="Grade One Winner is a horse racing game where you test your knowledge of top racehorses across multiple difficulty levels."
 	/>
 	<meta
 		name="keywords"
 		content="horse racing game, horse racing quiz, racing trivia, thoroughbred racing, Grade One Winner"
 	/>
-	<meta property="og:title" content="Grade One Winner | Horse Racing Knowledge Quiz Game" />
+	<meta property="og:title" content="Grade One Winner" />
 	<meta
 		property="og:description"
-		content="Test your horse racing knowledge by identifying top racehorses in a fast and fun quiz format."
+		content="Test your horse racing knowledge by identifying top racehorses in a fast and fun game format."
 	/>
 	<meta property="og:type" content="website" />
 </svelte:head>
