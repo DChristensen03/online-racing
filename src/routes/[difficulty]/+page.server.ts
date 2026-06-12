@@ -44,6 +44,14 @@ export const load = (async ({ params }) => {
 	return {
 		rounds,
 		difficultyAsInt: params.difficulty === 'easy' ? 1 : params.difficulty === 'medium' ? 2 : 3,
-		races: gameData.races
+		races: gameData.races,
+		jockeys: [...gameData.jockeys]
+			.sort(() => 0.5 - Math.random())
+			.slice(0, 5)
+			.map((jockey) => ({ name: jockey.name })),
+		trainers: [...gameData.trainers]
+			.sort(() => 0.5 - Math.random())
+			.slice(0, 5)
+			.map((trainer) => ({ name: trainer.name }))
 	};
 }) satisfies PageServerLoad;

@@ -207,7 +207,9 @@
 				body: JSON.stringify({
 					difficulty: $gameSession.difficulty,
 					selectedHorses: $gameSession.selectedHorses,
-					racePool: $gameSession.racePool.flatMap((round) => round)
+					racePool: $gameSession.racePool.flatMap((round) => round),
+					jockey: $gameSession.selectedJockey,
+					trainer: $gameSession.selectedTrainer
 				})
 			});
 

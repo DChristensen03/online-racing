@@ -13,7 +13,7 @@
 		</div>
 	</nav>
 	<div
-		class="mx-auto flex w-full max-w-md min-h-0 flex-col items-stretch justify-center gap-4 overflow-y-auto py-2"
+		class="mx-auto flex w-full max-w-md min-h-0 flex-col items-stretch justify-start gap-4 overflow-y-auto py-2"
 	>
 		{@render children()}
 	</div>

@@ -4,19 +4,49 @@
 	import { RunningStyle, Surface } from '$lib/types/enums';
 	import type { PageProps } from './$types';
 
+	type SelectionOption = {
+		name: string;
+		race?: string;
+		year?: number;
+		finishPosition?: number;
+		runningStyle?: RunningStyle;
+		turfAbility?: number;
+		dirtAbility?: number;
+		speedAbility?: number;
+		staminaAbility?: number;
+	};
+
 	let { data }: PageProps = $props();
-	let { rounds, difficultyAsInt, races } = $derived(data);
+	let { rounds, difficultyAsInt, races, jockeys, trainers } = $derived(data);
 
-	let activeRound = $derived(rounds[0]);
-	let selectedHorses: any[] = $state([]);
+	let selectionStep = $state(0);
+	let selectedTrainer = $state<SelectionOption | null>(null);
+	let selectedJockey = $state<SelectionOption | null>(null);
+	let selectedHorses: SelectionOption[] = $state([]);
+	let activeRound = $derived(
+		selectionStep === 0 ? trainers : selectionStep === 1 ? jockeys : rounds[selectionStep - 2]
+	);
+	let activeSelectionLabel = $derived(
+		selectionStep === 0 ? 'Trainer' : selectionStep === 1 ? 'Jockey' : 'Horse'
+	);
+	let isHorseRound = $derived(selectionStep >= 2);
 
-	const chooseHorse = (selectedHorse: any) => {
-		selectedHorses.push(selectedHorse);
-		if (rounds.indexOf(activeRound) < rounds.length - 1) {
-			activeRound = rounds[rounds.indexOf(activeRound) + 1];
+	const chooseSelection = (selectedOption: SelectionOption) => {
+		if (selectionStep === 0) {
+			selectedTrainer = selectedOption;
+		} else if (selectionStep === 1) {
+			selectedJockey = selectedOption;
+		} else {
+			selectedHorses.push(selectedOption);
+		}
+
+		if (selectionStep < rounds.length + 1) {
+			selectionStep += 1;
 		} else {
 			gameSession.set({
 				difficulty: data.difficultyAsInt,
+				selectedTrainer,
+				selectedJockey,
 				selectedHorses: selectedHorses,
 				racePool: rounds
 			});
@@ -38,6 +68,17 @@
 	};
 </script>
 
+<div class="mb-2 text-sm text-gray-600 text-center grid grid-cols-2 gap-2">
+	<div>
+		<span class="font-medium text-base-content">Trainer:</span>
+		<span class="text-primary">{selectedTrainer?.name || '—'}</span>
+	</div>
+	<div>
+		<span class="font-medium text-base-content">Jockey:</span>
+		<span class="text-primary">{selectedJockey?.name || '—'}</span>
+	</div>
+</div>
+
 <div class="grid grid-cols-3 gap-2">
 	{#each Object.entries(races) as [raceName, race]}
 		{@const selectedHorse = selectedHorses.find((h) => h.race === raceName)}
@@ -53,44 +94,69 @@
 	{/each}
 </div>
 
-<div class="w-full overflow-x-auto">
-	<table class="table-xs table min-w-max">
-		<thead>
-			<tr>
-				<th>Horse</th>
-				<th>Race</th>
-				<th>Year</th>
-				{#if difficultyAsInt < 3}
-					<th>Finish</th>
-				{/if}
-				{#if difficultyAsInt < 2}
-					<th>Style</th>
-				{/if}
-				<th></th>
-			</tr>
-		</thead>
-		<tbody>
-			{#each activeRound as horse}
-				{@const raceSelected = selectedHorses.find((h) => h.race === horse.race)}
-				<tr class="row-hover {raceSelected ? 'opacity-50' : ''}">
-					<td class="text-primary">{horse.name}</td>
-					<td>{horse.race}</td>
-					<td>{horse.year}</td>
+{#if selectionStep < 2}
+	<div class="w-full overflow-x-auto">
+		<table class="table-xs table min-w-max">
+			<thead>
+				<tr>
+					<th>{activeSelectionLabel}</th>
+					<th></th>
+				</tr>
+			</thead>
+			<tbody>
+				{#each activeRound as person}
+					<tr class="row-hover">
+						<td class="text-primary">{person.name}</td>
+						<td>
+							<button class="btn btn-sm btn-primary" onclick={() => chooseSelection(person)}
+								>✔</button
+							>
+						</td>
+					</tr>
+				{/each}
+			</tbody>
+		</table>
+	</div>
+{:else}
+	<div class="w-full overflow-x-auto">
+		<table class="table-xs table min-w-max">
+			<thead>
+				<tr>
+					<th>Horse</th>
+					<th>Race</th>
+					<th>Year</th>
 					{#if difficultyAsInt < 3}
-						<td>{horse.finishPosition}</td>
+						<th>Finish</th>
 					{/if}
 					{#if difficultyAsInt < 2}
-						<td>{formatRunningStyle(horse.runningStyle)}</td>
+						<th>Style</th>
 					{/if}
-					<td>
-						<button
-							class="btn btn-sm btn-primary"
-							onclick={() => chooseHorse(horse)}
-							disabled={raceSelected}>✔</button
-						>
-					</td>
+					<th></th>
 				</tr>
-			{/each}
-		</tbody>
-	</table>
-</div>
+			</thead>
+			<tbody>
+				{#each activeRound as horse}
+					{@const raceSelected = selectedHorses.find((h) => h.race === horse.race)}
+					<tr class="row-hover {raceSelected ? 'opacity-50' : ''}">
+						<td class="text-primary">{horse.name}</td>
+						<td>{horse.race}</td>
+						<td>{horse.year}</td>
+						{#if difficultyAsInt < 3}
+							<td>{horse.finishPosition}</td>
+						{/if}
+						{#if difficultyAsInt < 2}
+							<td>{formatRunningStyle(horse.runningStyle)}</td>
+						{/if}
+						<td>
+							<button
+								class="btn btn-sm btn-primary"
+								onclick={() => chooseSelection(horse)}
+								disabled={Boolean(raceSelected)}>✔</button
+							>
+						</td>
+					</tr>
+				{/each}
+			</tbody>
+		</table>
+	</div>
+{/if}

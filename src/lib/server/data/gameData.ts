@@ -3990,6 +3990,460 @@ const horses: Record<string, DataHorse[]> = {
 	]
 };
 
+const trainers = [
+	{
+		name: 'Cherie DeVaux',
+		turfAbility: 92,
+		dirtAbility: 88,
+		speedAbility: 85,
+		staminaAbility: 93
+	},
+	{
+		name: 'Bill Mott',
+		turfAbility: 92,
+		dirtAbility: 93,
+		speedAbility: 82,
+		staminaAbility: 96
+	},
+	{
+		name: 'Kenny McPeek',
+		turfAbility: 84,
+		dirtAbility: 92,
+		speedAbility: 87,
+		staminaAbility: 92
+	},
+	{
+		name: 'Gustavo Delgado',
+		turfAbility: 78,
+		dirtAbility: 88,
+		speedAbility: 90,
+		staminaAbility: 84
+	},
+	{
+		name: 'Eric Reed',
+		turfAbility: 72,
+		dirtAbility: 85,
+		speedAbility: 80,
+		staminaAbility: 86
+	},
+	{
+		name: 'Brad Cox',
+		turfAbility: 84,
+		dirtAbility: 96,
+		speedAbility: 95,
+		staminaAbility: 87
+	},
+	{
+		name: 'Bob Baffert',
+		turfAbility: 72,
+		dirtAbility: 99,
+		speedAbility: 100,
+		staminaAbility: 86
+	},
+	{
+		name: 'Todd Pletcher',
+		turfAbility: 88,
+		dirtAbility: 97,
+		speedAbility: 94,
+		staminaAbility: 90
+	},
+	{
+		name: "Doug O'Neill",
+		turfAbility: 75,
+		dirtAbility: 91,
+		speedAbility: 92,
+		staminaAbility: 84
+	},
+	{
+		name: 'Art Sherman',
+		turfAbility: 70,
+		dirtAbility: 90,
+		speedAbility: 88,
+		staminaAbility: 89
+	},
+	{
+		name: 'Claude McGaughey III',
+		turfAbility: 93,
+		dirtAbility: 89,
+		speedAbility: 78,
+		staminaAbility: 96
+	},
+	{
+		name: 'Graham Motion',
+		turfAbility: 95,
+		dirtAbility: 85,
+		speedAbility: 78,
+		staminaAbility: 97
+	},
+	{
+		name: 'Bennie Woolley Jr.',
+		turfAbility: 65,
+		dirtAbility: 82,
+		speedAbility: 75,
+		staminaAbility: 84
+	},
+	{
+		name: 'Rick Dutrow Jr.',
+		turfAbility: 75,
+		dirtAbility: 93,
+		speedAbility: 97,
+		staminaAbility: 80
+	},
+	{
+		name: 'Carl Nafzger',
+		turfAbility: 70,
+		dirtAbility: 88,
+		speedAbility: 80,
+		staminaAbility: 93
+	},
+	{
+		name: 'Michael Matz',
+		turfAbility: 90,
+		dirtAbility: 86,
+		speedAbility: 76,
+		staminaAbility: 96
+	},
+	{
+		name: 'John Shirreffs',
+		turfAbility: 91,
+		dirtAbility: 87,
+		speedAbility: 74,
+		staminaAbility: 98
+	},
+	{
+		name: 'John Servis',
+		turfAbility: 72,
+		dirtAbility: 88,
+		speedAbility: 90,
+		staminaAbility: 84
+	},
+	{
+		name: 'Barclay Tagg',
+		turfAbility: 86,
+		dirtAbility: 88,
+		speedAbility: 82,
+		staminaAbility: 90
+	},
+	{
+		name: 'John Ward Jr.',
+		turfAbility: 74,
+		dirtAbility: 87,
+		speedAbility: 83,
+		staminaAbility: 88
+	},
+	{
+		name: 'Neil Drysdale',
+		turfAbility: 98,
+		dirtAbility: 84,
+		speedAbility: 72,
+		staminaAbility: 99
+	},
+	{
+		name: 'D. Wayne Lukas',
+		turfAbility: 74,
+		dirtAbility: 97,
+		speedAbility: 98,
+		staminaAbility: 84
+	},
+	{
+		name: 'Nick Zito',
+		turfAbility: 78,
+		dirtAbility: 92,
+		speedAbility: 84,
+		staminaAbility: 94
+	},
+	{
+		name: 'MacKenzie Miller',
+		turfAbility: 80,
+		dirtAbility: 89,
+		speedAbility: 82,
+		staminaAbility: 91
+	},
+	{
+		name: 'Lynn Whiting',
+		turfAbility: 72,
+		dirtAbility: 88,
+		speedAbility: 83,
+		staminaAbility: 92
+	},
+	{
+		name: 'Charlie Whittingham',
+		turfAbility: 99,
+		dirtAbility: 91,
+		speedAbility: 80,
+		staminaAbility: 99
+	},
+	{
+		name: 'Jack Van Berg',
+		turfAbility: 65,
+		dirtAbility: 92,
+		speedAbility: 91,
+		staminaAbility: 83
+	},
+	{
+		name: 'Cam Gambolati',
+		turfAbility: 68,
+		dirtAbility: 86,
+		speedAbility: 95,
+		staminaAbility: 78
+	},
+	{
+		name: 'Woody Stephens',
+		turfAbility: 68,
+		dirtAbility: 97,
+		speedAbility: 99,
+		staminaAbility: 79
+	},
+	{
+		name: 'David Cross Jr.',
+		turfAbility: 70,
+		dirtAbility: 85,
+		speedAbility: 82,
+		staminaAbility: 84
+	},
+	{
+		name: 'Edwin Gregson',
+		turfAbility: 78,
+		dirtAbility: 89,
+		speedAbility: 84,
+		staminaAbility: 88
+	},
+	{
+		name: 'John Campo',
+		turfAbility: 72,
+		dirtAbility: 87,
+		speedAbility: 80,
+		staminaAbility: 90
+	},
+	{
+		name: 'LeRoy Jolley',
+		turfAbility: 82,
+		dirtAbility: 90,
+		speedAbility: 84,
+		staminaAbility: 91
+	}
+];
+
+const jockeys = [
+	{
+		name: 'Jose Ortiz',
+		turfAbility: 94,
+		dirtAbility: 92,
+		speedAbility: 91,
+		staminaAbility: 92
+	},
+	{
+		name: 'Junior Alvarado',
+		turfAbility: 84,
+		dirtAbility: 91,
+		speedAbility: 88,
+		staminaAbility: 89
+	},
+	{
+		name: 'Brian Joseph Hernandez Jr.',
+		turfAbility: 82,
+		dirtAbility: 90,
+		speedAbility: 86,
+		staminaAbility: 91
+	},
+	{
+		name: 'Javier Castellano',
+		turfAbility: 95,
+		dirtAbility: 94,
+		speedAbility: 89,
+		staminaAbility: 93
+	},
+	{
+		name: 'Sonny Leon',
+		turfAbility: 70,
+		dirtAbility: 84,
+		speedAbility: 82,
+		staminaAbility: 83
+	},
+	{
+		name: 'Florent Geroux',
+		turfAbility: 88,
+		dirtAbility: 94,
+		speedAbility: 93,
+		staminaAbility: 88
+	},
+	{
+		name: 'John Velazquez',
+		turfAbility: 92,
+		dirtAbility: 97,
+		speedAbility: 94,
+		staminaAbility: 90
+	},
+	{
+		name: 'Flavien Prat',
+		turfAbility: 99,
+		dirtAbility: 94,
+		speedAbility: 89,
+		staminaAbility: 96
+	},
+	{
+		name: 'Mike Smith',
+		turfAbility: 90,
+		dirtAbility: 98,
+		speedAbility: 93,
+		staminaAbility: 97
+	},
+	{
+		name: 'Mario Gutierrez',
+		turfAbility: 75,
+		dirtAbility: 90,
+		speedAbility: 88,
+		staminaAbility: 86
+	},
+	{
+		name: 'Victor Espinoza',
+		turfAbility: 82,
+		dirtAbility: 96,
+		speedAbility: 95,
+		staminaAbility: 88
+	},
+	{
+		name: 'Joel Rosario',
+		turfAbility: 91,
+		dirtAbility: 94,
+		speedAbility: 84,
+		staminaAbility: 97
+	},
+	{
+		name: 'Calvin Borel',
+		turfAbility: 70,
+		dirtAbility: 95,
+		speedAbility: 89,
+		staminaAbility: 92
+	},
+	{
+		name: 'Kent Desormeaux',
+		turfAbility: 93,
+		dirtAbility: 95,
+		speedAbility: 88,
+		staminaAbility: 96
+	},
+	{
+		name: 'Edgar Prado',
+		turfAbility: 88,
+		dirtAbility: 94,
+		speedAbility: 86,
+		staminaAbility: 95
+	},
+	{
+		name: 'Stewart Elliott',
+		turfAbility: 72,
+		dirtAbility: 88,
+		speedAbility: 87,
+		staminaAbility: 85
+	},
+	{
+		name: 'Jose Santos',
+		turfAbility: 84,
+		dirtAbility: 93,
+		speedAbility: 92,
+		staminaAbility: 88
+	},
+	{
+		name: 'Jorge Chavez',
+		turfAbility: 84,
+		dirtAbility: 92,
+		speedAbility: 95,
+		staminaAbility: 84
+	},
+	{
+		name: 'Jerry Bailey',
+		turfAbility: 95,
+		dirtAbility: 98,
+		speedAbility: 93,
+		staminaAbility: 96
+	},
+	{
+		name: 'Chris Antley',
+		turfAbility: 78,
+		dirtAbility: 94,
+		speedAbility: 96,
+		staminaAbility: 86
+	},
+	{
+		name: 'Gary Stevens',
+		turfAbility: 89,
+		dirtAbility: 98,
+		speedAbility: 95,
+		staminaAbility: 94
+	},
+	{
+		name: 'Chris McCarron',
+		turfAbility: 92,
+		dirtAbility: 96,
+		speedAbility: 91,
+		staminaAbility: 95
+	},
+	{
+		name: 'Pat Day',
+		turfAbility: 88,
+		dirtAbility: 97,
+		speedAbility: 90,
+		staminaAbility: 95
+	},
+	{
+		name: 'Craig Perret',
+		turfAbility: 82,
+		dirtAbility: 92,
+		speedAbility: 88,
+		staminaAbility: 87
+	},
+	{
+		name: 'Pat Valenzuela',
+		turfAbility: 80,
+		dirtAbility: 95,
+		speedAbility: 97,
+		staminaAbility: 84
+	},
+	{
+		name: 'Bill Shoemaker',
+		turfAbility: 96,
+		dirtAbility: 95,
+		speedAbility: 88,
+		staminaAbility: 98
+	},
+	{
+		name: 'Angel Cordero Jr.',
+		turfAbility: 87,
+		dirtAbility: 96,
+		speedAbility: 98,
+		staminaAbility: 87
+	},
+	{
+		name: 'Laffit Pincay Jr.',
+		turfAbility: 91,
+		dirtAbility: 97,
+		speedAbility: 95,
+		staminaAbility: 91
+	},
+	{
+		name: 'Eddie Delahoussaye',
+		turfAbility: 89,
+		dirtAbility: 92,
+		speedAbility: 86,
+		staminaAbility: 94
+	},
+	{
+		name: 'Jorge Velasquez',
+		turfAbility: 86,
+		dirtAbility: 94,
+		speedAbility: 90,
+		staminaAbility: 90
+	},
+	{
+		name: 'Jacinto Vasquez',
+		turfAbility: 85,
+		dirtAbility: 92,
+		speedAbility: 88,
+		staminaAbility: 91
+	}
+];
+
 const races = {
 	'Dirt Mile': {
 		distance: '1 mile',
@@ -4033,4 +4487,4 @@ const races = {
 	}
 };
 
-export default { races, horses };
+export default { races, horses, jockeys, trainers };

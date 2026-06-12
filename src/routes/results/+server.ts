@@ -4,15 +4,26 @@ import { RunningStyle, Surface } from '$lib/types/enums';
 import { json } from '@sveltejs/kit';
 
 export const POST: RequestHandler = async ({ request }) => {
-	const { selectedHorses, racePool } = await request.json();
+	const { selectedHorses, racePool, jockey, trainer } = await request.json();
 	const raceResults = Object.entries(gameData.races).map(([raceName, race]) => {
 		const horsesInRace = racePool.filter((horse: any) => horse.race == raceName);
 		const dataHorsesInRace: DataHorse[] = horsesInRace.map((horse: any) =>
 			gameData.horses[raceName].find((h) => h.name === horse.name)
 		);
-		const results = getRaceResult(dataHorsesInRace, race);
+		const playerJockey = gameData.jockeys.find((j) => j.name === jockey?.name);
+		const playerTrainer = gameData.trainers.find((t) => t.name === trainer?.name);
 		const chosenHorse = horsesInRace.find((horse: any) =>
 			selectedHorses.some((h: any) => h.name === horse.name)
+		);
+		if (!playerJockey || !playerTrainer) {
+			throw new Error('Invalid jockey or trainer');
+		}
+		const results = getRaceResult(
+			dataHorsesInRace,
+			race,
+			playerJockey,
+			playerTrainer,
+			chosenHorse?.name
 		);
 		const chosenResult = results.find((result) => result.name === chosenHorse?.name);
 		const points = chosenResult ? results.length - chosenResult.finishPosition + 1 : 0;
@@ -34,8 +45,27 @@ export const POST: RequestHandler = async ({ request }) => {
 
 const getRaceResult = (
 	horses: DataHorse[],
-	race: { distance: string; surface: Surface; distanceFurlongs: number }
+	race: { distance: string; surface: Surface; distanceFurlongs: number },
+	playerJockey: {
+		name: string;
+		turfAbility: number;
+		dirtAbility: number;
+		speedAbility: number;
+		staminaAbility: number;
+	},
+	playerTrainer: {
+		name: string;
+		turfAbility: number;
+		dirtAbility: number;
+		speedAbility: number;
+		staminaAbility: number;
+	},
+	playerHorseName?: string
 ) => {
+	const getStatModifier = (stat: number) => 1 + (stat - 90) / 200;
+	const getCombinedModifier = (trainerStat: number, jockeyStat: number) =>
+		(getStatModifier(trainerStat) + getStatModifier(jockeyStat)) / 2;
+
 	const styleCounts = new Map<RunningStyle, number>([
 		[
 			RunningStyle.FrontRunner,
@@ -60,11 +90,29 @@ const getRaceResult = (
 		const distanceFurlongs = race.distanceFurlongs;
 		const speedWeight = Math.max(0, 1 - (distanceFurlongs - 4) / 12);
 		const staminaWeight = Math.max(0, (distanceFurlongs - 4) / 12);
+		const isPlayerHorse = horse.name === playerHorseName;
 		const surfaceAbility = race.surface === Surface.Turf ? horse.turfAbility : horse.dirtAbility;
+		const adjustedSpeed = isPlayerHorse
+			? horse.speed * getCombinedModifier(playerTrainer.speedAbility, playerJockey.speedAbility)
+			: horse.speed;
+		const adjustedStamina = isPlayerHorse
+			? horse.stamina *
+				getCombinedModifier(playerTrainer.staminaAbility, playerJockey.staminaAbility)
+			: horse.stamina;
+		const adjustedSurfaceAbility = isPlayerHorse
+			? surfaceAbility *
+				getCombinedModifier(
+					race.surface === Surface.Turf ? playerTrainer.turfAbility : playerTrainer.dirtAbility,
+					race.surface === Surface.Turf ? playerJockey.turfAbility : playerJockey.dirtAbility
+				)
+			: surfaceAbility;
 		const styleCount = styleCounts.get(horse.runningStyle) ?? horses.length;
 		const paceBoost = 0.3 / styleCount;
 		const score =
-			horse.speed * speedWeight + horse.stamina * staminaWeight + surfaceAbility * 0.5 + paceBoost;
+			adjustedSpeed * speedWeight +
+			adjustedStamina * staminaWeight +
+			adjustedSurfaceAbility * 0.5 +
+			paceBoost;
 		return { horse, score };
 	});
 	const sorted = raceScores.sort((a, b) => b.score - a.score);
