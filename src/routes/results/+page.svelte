@@ -350,6 +350,16 @@
 					</div>
 
 					<div class="divider my-1"></div>
+					<div class="flex flex-row justify-around">
+						<div>
+							<span class="font-medium text-base-content">Trainer:</span>
+							<span class="text-primary">{$gameSession.selectedTrainer?.name || '—'}</span>
+						</div>
+						<div>
+							<span class="font-medium text-base-content">Jockey:</span>
+							<span class="text-primary">{$gameSession.selectedJockey?.name || '—'}</span>
+						</div>
+					</div>
 					<div class="space-y-2 flex flex-row gap-2">
 						<div class="flex flex-col w-full">
 							<div class="flex items-center justify-between text-sm">
