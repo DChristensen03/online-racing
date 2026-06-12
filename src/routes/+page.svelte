@@ -39,10 +39,7 @@
 		</div>
 	</div>
 	<div class="flex flex-col items-center gap-4">
-		<button
-			class="btn btn-lg btn-secondary w-42"
-			onclick={startGame}>Start</button
-		>
+		<button class="btn btn-lg btn-secondary w-42" onclick={startGame}>Start</button>
 		<button
 			onclick={() => window.open('https://buymeacoffee.com/crdc', '_blank')}
 			class="btn btn-lg btn-primary btn-outline w-42">Buy Me a Coffee</button
