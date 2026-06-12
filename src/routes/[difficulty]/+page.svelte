@@ -54,7 +54,7 @@
 </div>
 
 <div class="w-full overflow-x-auto">
-	<table class="table-xs table">
+	<table class="table-xs table min-w-max">
 		<thead>
 			<tr>
 				<th>Horse</th>
