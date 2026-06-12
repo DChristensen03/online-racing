@@ -13,8 +13,8 @@
 <div class="flex flex-col h-full justify-center">
 	<h1 class="text-base-content text-center text-4xl mb-8">Grade One Winner</h1>
 	<p class="text-base-content/80 text-center mx-auto mb-6 max-w-sm px-3">
-		A quiz game built to test your horse racing knowledge, from famous Grade 1 winners to all-time
-		racing legends.
+		A knowledge game built to test your horse racing knowledge, choose some of the best horses,
+		jockeys, and trainers of all-time.
 	</p>
 	<div id="difficulty " class="mx-auto mb-4">
 		<div class="join outline outline-primary rounded-md">
