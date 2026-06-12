@@ -10,28 +10,33 @@ export const POST: RequestHandler = async ({ request }) => {
 		const dataHorsesInRace: DataHorse[] = horsesInRace.map((horse: any) =>
 			gameData.horses[raceName].find((h) => h.name === horse.name)
 		);
+		const results = getRaceResult(dataHorsesInRace, race);
+		const chosenHorse = horsesInRace.find((horse: any) =>
+			selectedHorses.some((h: any) => h.name === horse.name)
+		);
+		const chosenResult = results.find((result) => result.name === chosenHorse?.name);
+		const points = chosenResult ? results.length - chosenResult.finishPosition + 1 : 0;
 
 		return {
 			raceName,
 			race,
-			results: getRaceResult(dataHorsesInRace, race),
-			playerHorse: horsesInRace.find((horse: any) =>
-				selectedHorses.some((h: any) => h.name === horse.name)
-			)
+			results,
+			points,
+			playerHorse: chosenHorse
 		};
 	});
 
-	// Calculate score 3 points for every selectedHorse that finishes first, 2 points for every selectedHorse that finishes second, and 1 point for every selectedHorse that finishes third.
-	const score = raceResults.reduce((acc, { results }) => {
-		results.forEach((result, index) => {
-			if (index < 3 && selectedHorses.some((horse: any) => horse.name === result.name)) {
-				acc += 3 - index;
-			}
-		});
-		return acc;
-	}, 0);
+	const score = raceResults.reduce((acc, { points }) => acc + points, 0);
+	const totalScore = raceResults.reduce(
+		(acc, { results }) => acc + getMaxRacePoints(results.length),
+		0
+	);
 
-	return json({ raceResults, score });
+	return json({ raceResults, score, totalScore });
+};
+
+const getMaxRacePoints = (participantCount: number) => {
+	return (participantCount * (participantCount + 1)) / 2;
 };
 
 const getRaceResult = (

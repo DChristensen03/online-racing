@@ -5,7 +5,7 @@
 </script>
 
 <h1 class="text-base-content text-center text-4xl">The Sport of Kings</h1>
-<div id="difficulty">
+<div id="difficulty " class="mx-auto">
 	<div class="join outline outline-primary rounded-md">
 		<button
 			class="btn btn-lg btn-soft btn-primary join-item {difficulty === 'Easy' ? 'btn-outline' : ''}"

@@ -9,6 +9,7 @@
 		raceName: string;
 		race: { distance: string; surface: string };
 		results: { name: string; finishPosition: number }[];
+		points: number;
 		playerHorse?: { name: string };
 	};
 
@@ -22,6 +23,7 @@
 		raceName: string;
 		distance: string;
 		surface: string;
+		points: number;
 		horses: HorseResult[];
 	};
 
@@ -31,7 +33,6 @@
 		finishPosition: number;
 		points: number;
 		totalHorses: number;
-		progress: number;
 	};
 
 	const SHUFFLE_DURATION_MS = 3000;
@@ -49,32 +50,28 @@
 	let raceRevealComplete = $state(false);
 	let showSummary = $state(false);
 	let errorMessage = $state('');
+	let serverScore = $state(0);
+	let serverTotalScore = $state(0);
 	let shuffleInterval: ReturnType<typeof setInterval> | undefined;
 	let revealTimeout: ReturnType<typeof setTimeout> | undefined;
 	let summaryCardEl: HTMLDivElement | null = $state(null);
 
 	let hasMoreRaces = $derived(activeRaceIndex < raceReveals.length - 1);
-	const totalPossiblePoints = 24;
 	let raceSummaries = $derived(
 		raceReveals.map((race) => {
 			const chosenHorse = race.horses.find((horse) => horse.playerHorse);
 			const totalHorses = race.horses.length;
 			const finishPosition = chosenHorse?.finishPosition ?? 0;
-			const points =
-				finishPosition === 1 ? 3 : finishPosition === 2 ? 2 : finishPosition === 3 ? 1 : 0;
-			const progress = totalHorses > 0 ? totalHorses - finishPosition + 1 : 0;
 
 			return {
 				raceName: race.raceName,
 				chosenHorse: chosenHorse?.name ?? '—',
 				finishPosition,
-				points,
+				points: race.points,
 				totalHorses,
-				progress
 			} satisfies RaceSummary;
 		})
 	);
-	let totalPoints = $derived(raceSummaries.reduce((acc, race) => acc + race.points, 0));
 
 	const getPlacementBarStyle = (finishPosition: number, totalHorses: number) => {
 		if (!totalHorses) {
@@ -218,7 +215,10 @@
 				throw new Error('Could not load race results.');
 			}
 
-			const data: { raceResults: RaceFromServer[] } = await result.json();
+			const data: { raceResults: RaceFromServer[]; score: number; totalScore: number } =
+				await result.json();
+			serverScore = data.score;
+			serverTotalScore = data.totalScore;
 			raceReveals = data.raceResults.map((raceObj) => {
 				const finalHorses: HorseResult[] = raceObj.results
 					.map((horse) => ({
@@ -232,6 +232,7 @@
 					raceName: raceObj.raceName,
 					distance: raceObj.race.distance,
 					surface: raceObj.race.surface,
+					points: raceObj.points,
 					horses: finalHorses
 				};
 			});
@@ -349,12 +350,12 @@
 						<div class="flex flex-col w-full">
 							<div class="flex items-center justify-between text-sm">
 								<span class="text-base-content/70">Total points</span>
-								<span class="font-semibold">{totalPoints} / {totalPossiblePoints}</span>
+								<span class="font-semibold">{serverScore} / {serverTotalScore}</span>
 							</div>
 							<div class="h-2 w-full overflow-hidden rounded-full bg-base-300">
 								<div
 									class="h-full rounded-full transition-all duration-300"
-									style={getTotalPointsBarStyle(totalPoints, totalPossiblePoints)}
+									style={getTotalPointsBarStyle(serverScore, serverTotalScore)}
 								></div>
 							</div>
 						</div>
