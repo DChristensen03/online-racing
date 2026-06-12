@@ -1,7 +1,13 @@
 <script lang="ts">
 	import { goto } from '$app/navigation';
+	import { clearGameSession } from '$lib/stores/gameSession';
 
 	let difficulty = $state('Easy');
+
+	const startGame = () => {
+		clearGameSession();
+		goto(`/${difficulty.toLowerCase()}`);
+	};
 </script>
 
 <div class="flex flex-col h-full justify-center">
@@ -35,7 +41,7 @@
 	<div class="flex flex-col items-center gap-4">
 		<button
 			class="btn btn-lg btn-secondary w-42"
-			onclick={() => goto(`/${difficulty.toLowerCase()}`)}>Start</button
+			onclick={startGame}>Start</button
 		>
 		<button
 			onclick={() => window.open('https://buymeacoffee.com/crdc', '_blank')}
