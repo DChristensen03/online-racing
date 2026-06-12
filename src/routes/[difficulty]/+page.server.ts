@@ -47,11 +47,11 @@ export const load = (async ({ params }) => {
 		races: gameData.races,
 		jockeys: [...gameData.jockeys]
 			.sort(() => 0.5 - Math.random())
-			.slice(0, 5)
-			.map((jockey) => ({ name: jockey.name })),
+			.slice(0, 10)
+			.map((jockey) => ({ name: jockey.name, year: jockey.year })),
 		trainers: [...gameData.trainers]
 			.sort(() => 0.5 - Math.random())
-			.slice(0, 5)
+			.slice(0, 10)
 			.map((trainer) => ({ name: trainer.name, year: trainer.year }))
 	};
 }) satisfies PageServerLoad;

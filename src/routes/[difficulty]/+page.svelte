@@ -29,7 +29,6 @@
 	let activeSelectionLabel = $derived(
 		selectionStep === 0 ? 'Trainer' : selectionStep === 1 ? 'Jockey' : 'Horse'
 	);
-	let isHorseRound = $derived(selectionStep >= 2);
 
 	const chooseSelection = (selectedOption: SelectionOption) => {
 		if (selectionStep === 0) {
@@ -79,10 +78,10 @@
 	</div>
 </div>
 
-<div class="grid grid-cols-3 gap-2">
+<div class="flex flex-wrap justify-center gap-2">
 	{#each Object.entries(races) as [raceName, race]}
 		{@const selectedHorse = selectedHorses.find((h) => h.race === raceName)}
-		<div class="bg-base-200 rounded-lg text-center">
+		<div class="w-[calc((100%-1rem)/3)] bg-base-200 rounded-lg text-center">
 			<h3 class="font-semibold text-sm">{raceName}</h3>
 			<div class="text-xs text-gray-600 space-y-0.5">
 				<p>{race.surface.toString()} • {race.distance}</p>
