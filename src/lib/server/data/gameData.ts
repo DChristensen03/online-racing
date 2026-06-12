@@ -3993,6 +3993,7 @@ const horses: Record<string, DataHorse[]> = {
 const trainers = [
 	{
 		name: 'Cherie DeVaux',
+		year: 2026,
 		turfAbility: 92,
 		dirtAbility: 88,
 		speedAbility: 85,
@@ -4000,6 +4001,7 @@ const trainers = [
 	},
 	{
 		name: 'Bill Mott',
+		year: 2025,
 		turfAbility: 92,
 		dirtAbility: 93,
 		speedAbility: 82,
@@ -4007,6 +4009,7 @@ const trainers = [
 	},
 	{
 		name: 'Kenny McPeek',
+		year: 2024,
 		turfAbility: 84,
 		dirtAbility: 92,
 		speedAbility: 87,
@@ -4014,6 +4017,7 @@ const trainers = [
 	},
 	{
 		name: 'Gustavo Delgado',
+		year: 2023,
 		turfAbility: 78,
 		dirtAbility: 88,
 		speedAbility: 90,
@@ -4021,6 +4025,7 @@ const trainers = [
 	},
 	{
 		name: 'Eric Reed',
+		year: 2022,
 		turfAbility: 72,
 		dirtAbility: 85,
 		speedAbility: 80,
@@ -4028,6 +4033,7 @@ const trainers = [
 	},
 	{
 		name: 'Brad Cox',
+		year: 2021,
 		turfAbility: 84,
 		dirtAbility: 96,
 		speedAbility: 95,
@@ -4035,6 +4041,7 @@ const trainers = [
 	},
 	{
 		name: 'Bob Baffert',
+		year: 2020,
 		turfAbility: 72,
 		dirtAbility: 99,
 		speedAbility: 100,
@@ -4042,6 +4049,7 @@ const trainers = [
 	},
 	{
 		name: 'Todd Pletcher',
+		year: 2017,
 		turfAbility: 88,
 		dirtAbility: 97,
 		speedAbility: 94,
@@ -4049,6 +4057,7 @@ const trainers = [
 	},
 	{
 		name: "Doug O'Neill",
+		year: 2016,
 		turfAbility: 75,
 		dirtAbility: 91,
 		speedAbility: 92,
@@ -4056,6 +4065,7 @@ const trainers = [
 	},
 	{
 		name: 'Art Sherman',
+		year: 2014,
 		turfAbility: 70,
 		dirtAbility: 90,
 		speedAbility: 88,
@@ -4063,6 +4073,7 @@ const trainers = [
 	},
 	{
 		name: 'Claude McGaughey III',
+		year: 2013,
 		turfAbility: 93,
 		dirtAbility: 89,
 		speedAbility: 78,
@@ -4070,6 +4081,7 @@ const trainers = [
 	},
 	{
 		name: 'Graham Motion',
+		year: 2011,
 		turfAbility: 95,
 		dirtAbility: 85,
 		speedAbility: 78,
@@ -4077,6 +4089,7 @@ const trainers = [
 	},
 	{
 		name: 'Bennie Woolley Jr.',
+		year: 2009,
 		turfAbility: 65,
 		dirtAbility: 82,
 		speedAbility: 75,
@@ -4084,6 +4097,7 @@ const trainers = [
 	},
 	{
 		name: 'Rick Dutrow Jr.',
+		year: 2008,
 		turfAbility: 75,
 		dirtAbility: 93,
 		speedAbility: 97,
@@ -4091,6 +4105,7 @@ const trainers = [
 	},
 	{
 		name: 'Carl Nafzger',
+		year: 2007,
 		turfAbility: 70,
 		dirtAbility: 88,
 		speedAbility: 80,
@@ -4098,6 +4113,7 @@ const trainers = [
 	},
 	{
 		name: 'Michael Matz',
+		year: 2006,
 		turfAbility: 90,
 		dirtAbility: 86,
 		speedAbility: 76,
@@ -4105,6 +4121,7 @@ const trainers = [
 	},
 	{
 		name: 'John Shirreffs',
+		year: 2005,
 		turfAbility: 91,
 		dirtAbility: 87,
 		speedAbility: 74,
@@ -4112,6 +4129,7 @@ const trainers = [
 	},
 	{
 		name: 'John Servis',
+		year: 2004,
 		turfAbility: 72,
 		dirtAbility: 88,
 		speedAbility: 90,
@@ -4119,6 +4137,7 @@ const trainers = [
 	},
 	{
 		name: 'Barclay Tagg',
+		year: 2003,
 		turfAbility: 86,
 		dirtAbility: 88,
 		speedAbility: 82,
@@ -4126,6 +4145,7 @@ const trainers = [
 	},
 	{
 		name: 'John Ward Jr.',
+		year: 2001,
 		turfAbility: 74,
 		dirtAbility: 87,
 		speedAbility: 83,
@@ -4133,6 +4153,7 @@ const trainers = [
 	},
 	{
 		name: 'Neil Drysdale',
+		year: 2000,
 		turfAbility: 98,
 		dirtAbility: 84,
 		speedAbility: 72,
@@ -4140,6 +4161,7 @@ const trainers = [
 	},
 	{
 		name: 'D. Wayne Lukas',
+		year: 1999,
 		turfAbility: 74,
 		dirtAbility: 97,
 		speedAbility: 98,
@@ -4147,6 +4169,7 @@ const trainers = [
 	},
 	{
 		name: 'Nick Zito',
+		year: 1994,
 		turfAbility: 78,
 		dirtAbility: 92,
 		speedAbility: 84,
@@ -4154,6 +4177,7 @@ const trainers = [
 	},
 	{
 		name: 'MacKenzie Miller',
+		year: 1993,
 		turfAbility: 80,
 		dirtAbility: 89,
 		speedAbility: 82,
@@ -4161,6 +4185,7 @@ const trainers = [
 	},
 	{
 		name: 'Lynn Whiting',
+		year: 1992,
 		turfAbility: 72,
 		dirtAbility: 88,
 		speedAbility: 83,
@@ -4168,6 +4193,7 @@ const trainers = [
 	},
 	{
 		name: 'Charlie Whittingham',
+		year: 1989,
 		turfAbility: 99,
 		dirtAbility: 91,
 		speedAbility: 80,
@@ -4175,6 +4201,7 @@ const trainers = [
 	},
 	{
 		name: 'Jack Van Berg',
+		year: 1987,
 		turfAbility: 65,
 		dirtAbility: 92,
 		speedAbility: 91,
@@ -4182,6 +4209,7 @@ const trainers = [
 	},
 	{
 		name: 'Cam Gambolati',
+		year: 1985,
 		turfAbility: 68,
 		dirtAbility: 86,
 		speedAbility: 95,
@@ -4189,6 +4217,7 @@ const trainers = [
 	},
 	{
 		name: 'Woody Stephens',
+		year: 1984,
 		turfAbility: 68,
 		dirtAbility: 97,
 		speedAbility: 99,
@@ -4196,6 +4225,7 @@ const trainers = [
 	},
 	{
 		name: 'David Cross Jr.',
+		year: 1983,
 		turfAbility: 70,
 		dirtAbility: 85,
 		speedAbility: 82,
@@ -4203,6 +4233,7 @@ const trainers = [
 	},
 	{
 		name: 'Edwin Gregson',
+		year: 1982,
 		turfAbility: 78,
 		dirtAbility: 89,
 		speedAbility: 84,
@@ -4210,6 +4241,7 @@ const trainers = [
 	},
 	{
 		name: 'John Campo',
+		year: 1981,
 		turfAbility: 72,
 		dirtAbility: 87,
 		speedAbility: 80,
@@ -4217,6 +4249,7 @@ const trainers = [
 	},
 	{
 		name: 'LeRoy Jolley',
+		year: 1980,
 		turfAbility: 82,
 		dirtAbility: 90,
 		speedAbility: 84,
@@ -4227,6 +4260,7 @@ const trainers = [
 const jockeys = [
 	{
 		name: 'Jose Ortiz',
+		year: 2026,
 		turfAbility: 94,
 		dirtAbility: 92,
 		speedAbility: 91,
@@ -4234,6 +4268,7 @@ const jockeys = [
 	},
 	{
 		name: 'Junior Alvarado',
+		year: 2025,
 		turfAbility: 84,
 		dirtAbility: 91,
 		speedAbility: 88,
@@ -4241,6 +4276,7 @@ const jockeys = [
 	},
 	{
 		name: 'Brian Joseph Hernandez Jr.',
+		year: 2024,
 		turfAbility: 82,
 		dirtAbility: 90,
 		speedAbility: 86,
@@ -4248,6 +4284,7 @@ const jockeys = [
 	},
 	{
 		name: 'Javier Castellano',
+		year: 2023,
 		turfAbility: 95,
 		dirtAbility: 94,
 		speedAbility: 89,
@@ -4255,6 +4292,7 @@ const jockeys = [
 	},
 	{
 		name: 'Sonny Leon',
+		year: 2022,
 		turfAbility: 70,
 		dirtAbility: 84,
 		speedAbility: 82,
@@ -4262,6 +4300,7 @@ const jockeys = [
 	},
 	{
 		name: 'Florent Geroux',
+		year: 2021,
 		turfAbility: 88,
 		dirtAbility: 94,
 		speedAbility: 93,
@@ -4269,6 +4308,7 @@ const jockeys = [
 	},
 	{
 		name: 'John Velazquez',
+		year: 2020,
 		turfAbility: 92,
 		dirtAbility: 97,
 		speedAbility: 94,
@@ -4276,6 +4316,7 @@ const jockeys = [
 	},
 	{
 		name: 'Flavien Prat',
+		year: 2019,
 		turfAbility: 99,
 		dirtAbility: 94,
 		speedAbility: 89,
@@ -4283,6 +4324,7 @@ const jockeys = [
 	},
 	{
 		name: 'Mike Smith',
+		year: 2018,
 		turfAbility: 90,
 		dirtAbility: 98,
 		speedAbility: 93,
@@ -4290,6 +4332,7 @@ const jockeys = [
 	},
 	{
 		name: 'Mario Gutierrez',
+		year: 2016,
 		turfAbility: 75,
 		dirtAbility: 90,
 		speedAbility: 88,
@@ -4297,6 +4340,7 @@ const jockeys = [
 	},
 	{
 		name: 'Victor Espinoza',
+		year: 2015,
 		turfAbility: 82,
 		dirtAbility: 96,
 		speedAbility: 95,
@@ -4304,6 +4348,7 @@ const jockeys = [
 	},
 	{
 		name: 'Joel Rosario',
+		year: 2013,
 		turfAbility: 91,
 		dirtAbility: 94,
 		speedAbility: 84,
@@ -4311,6 +4356,7 @@ const jockeys = [
 	},
 	{
 		name: 'Calvin Borel',
+		year: 2010,
 		turfAbility: 70,
 		dirtAbility: 95,
 		speedAbility: 89,
@@ -4318,6 +4364,7 @@ const jockeys = [
 	},
 	{
 		name: 'Kent Desormeaux',
+		year: 2008,
 		turfAbility: 93,
 		dirtAbility: 95,
 		speedAbility: 88,
@@ -4325,6 +4372,7 @@ const jockeys = [
 	},
 	{
 		name: 'Edgar Prado',
+		year: 2006,
 		turfAbility: 88,
 		dirtAbility: 94,
 		speedAbility: 86,
@@ -4332,6 +4380,7 @@ const jockeys = [
 	},
 	{
 		name: 'Stewart Elliott',
+		year: 2004,
 		turfAbility: 72,
 		dirtAbility: 88,
 		speedAbility: 87,
@@ -4339,6 +4388,7 @@ const jockeys = [
 	},
 	{
 		name: 'Jose Santos',
+		year: 2003,
 		turfAbility: 84,
 		dirtAbility: 93,
 		speedAbility: 92,
@@ -4346,6 +4396,7 @@ const jockeys = [
 	},
 	{
 		name: 'Jorge Chavez',
+		year: 2001,
 		turfAbility: 84,
 		dirtAbility: 92,
 		speedAbility: 95,
@@ -4353,27 +4404,31 @@ const jockeys = [
 	},
 	{
 		name: 'Jerry Bailey',
+		year: 1999,
 		turfAbility: 95,
 		dirtAbility: 98,
 		speedAbility: 93,
 		staminaAbility: 96
 	},
 	{
-		name: 'Chris Antley',
-		turfAbility: 78,
-		dirtAbility: 94,
-		speedAbility: 96,
-		staminaAbility: 86
-	},
-	{
 		name: 'Gary Stevens',
+		year: 1997,
 		turfAbility: 89,
 		dirtAbility: 98,
 		speedAbility: 95,
 		staminaAbility: 94
 	},
 	{
+		name: 'Chris Antley',
+		year: 1999,
+		turfAbility: 78,
+		dirtAbility: 94,
+		speedAbility: 96,
+		staminaAbility: 86
+	},
+	{
 		name: 'Chris McCarron',
+		year: 1994,
 		turfAbility: 92,
 		dirtAbility: 96,
 		speedAbility: 91,
@@ -4381,6 +4436,7 @@ const jockeys = [
 	},
 	{
 		name: 'Pat Day',
+		year: 1992,
 		turfAbility: 88,
 		dirtAbility: 97,
 		speedAbility: 90,
@@ -4388,6 +4444,7 @@ const jockeys = [
 	},
 	{
 		name: 'Craig Perret',
+		year: 1990,
 		turfAbility: 82,
 		dirtAbility: 92,
 		speedAbility: 88,
@@ -4395,6 +4452,7 @@ const jockeys = [
 	},
 	{
 		name: 'Pat Valenzuela',
+		year: 1989,
 		turfAbility: 80,
 		dirtAbility: 95,
 		speedAbility: 97,
@@ -4402,6 +4460,7 @@ const jockeys = [
 	},
 	{
 		name: 'Bill Shoemaker',
+		year: 1986,
 		turfAbility: 96,
 		dirtAbility: 95,
 		speedAbility: 88,
@@ -4409,6 +4468,7 @@ const jockeys = [
 	},
 	{
 		name: 'Angel Cordero Jr.',
+		year: 1985,
 		turfAbility: 87,
 		dirtAbility: 96,
 		speedAbility: 98,
@@ -4416,6 +4476,7 @@ const jockeys = [
 	},
 	{
 		name: 'Laffit Pincay Jr.',
+		year: 1984,
 		turfAbility: 91,
 		dirtAbility: 97,
 		speedAbility: 95,
@@ -4423,6 +4484,7 @@ const jockeys = [
 	},
 	{
 		name: 'Eddie Delahoussaye',
+		year: 1983,
 		turfAbility: 89,
 		dirtAbility: 92,
 		speedAbility: 86,
@@ -4430,6 +4492,7 @@ const jockeys = [
 	},
 	{
 		name: 'Jorge Velasquez',
+		year: 1981,
 		turfAbility: 86,
 		dirtAbility: 94,
 		speedAbility: 90,
@@ -4437,6 +4500,7 @@ const jockeys = [
 	},
 	{
 		name: 'Jacinto Vasquez',
+		year: 1980,
 		turfAbility: 85,
 		dirtAbility: 92,
 		speedAbility: 88,

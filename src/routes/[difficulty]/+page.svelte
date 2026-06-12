@@ -100,6 +100,7 @@
 			<thead>
 				<tr>
 					<th>{activeSelectionLabel}</th>
+					<th>Year</th>
 					<th></th>
 				</tr>
 			</thead>
@@ -107,6 +108,7 @@
 				{#each activeRound as person}
 					<tr class="row-hover">
 						<td class="text-primary">{person.name}</td>
+						<td>{person.year}</td>
 						<td>
 							<button class="btn btn-sm btn-primary" onclick={() => chooseSelection(person)}
 								>✔</button

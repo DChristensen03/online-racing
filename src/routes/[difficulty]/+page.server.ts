@@ -52,6 +52,6 @@ export const load = (async ({ params }) => {
 		trainers: [...gameData.trainers]
 			.sort(() => 0.5 - Math.random())
 			.slice(0, 5)
-			.map((trainer) => ({ name: trainer.name }))
+			.map((trainer) => ({ name: trainer.name, year: trainer.year }))
 	};
 }) satisfies PageServerLoad;
