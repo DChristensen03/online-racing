@@ -68,7 +68,7 @@
 				chosenHorse: chosenHorse?.name ?? '—',
 				finishPosition,
 				points: race.points,
-				totalHorses,
+				totalHorses
 			} satisfies RaceSummary;
 		})
 	);
