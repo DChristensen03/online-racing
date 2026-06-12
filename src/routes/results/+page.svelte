@@ -290,7 +290,9 @@
 											<span class="badge badge-primary badge-xs">Player</span>
 										{/if}
 									</div>
-									<span class="text-base-content/60 text-xs">#{horse.finishPosition}</span>
+									<span class="text-base-content/60 text-xs"
+										>#{isShuffling ? index + 1 : horse.finishPosition}</span
+									>
 								</li>
 							{/each}
 						</ul>
