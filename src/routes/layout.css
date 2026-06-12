@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import 'tailwindcss';
+@plugin 'flyonui';
+@import '../../node_modules/flyonui/variants.css'; /* Require only if you want to use FlyonUI JS component */
+
+@source '../../node_modules/flyonui/dist/index.js'; /* Require only if you want to use FlyonUI JS component */
+
+@theme {
+	--font-family: 'Playfair Display', serif;
+}
+
+:root {
+	/* Primary is a deep grass like green, secondary is a regal racing gold */
+	--color-primary: #cdae00;
+	--color-secondary: #006400;
+}
+
+html,
+body {
+	font-family: var(--font-family);
+}
+
+button,
+input,
+select,
+textarea {
+	font: inherit;
+}
