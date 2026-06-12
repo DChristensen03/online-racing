@@ -35,8 +35,8 @@ export const load = (async ({ params }) => {
 		});
 		// Sort each round alphabetically by horse name
 		roundHorses.sort((a, b) => {
-			if (a.name < b.name) return -1;
-			if (a.name > b.name) return 1;
+			if (a.race < b.race) return -1;
+			if (a.race > b.race) return 1;
 			return 0;
 		});
 		rounds.push(roundHorses);
