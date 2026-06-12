@@ -27,16 +27,9 @@ export const POST: RequestHandler = async ({ request }) => {
 	});
 
 	const score = raceResults.reduce((acc, { points }) => acc + points, 0);
-	const totalScore = raceResults.reduce(
-		(acc, { results }) => acc + getMaxRacePoints(results.length),
-		0
-	);
+	const totalScore = raceResults.reduce((acc, { results }) => acc + results.length, 0);
 
 	return json({ raceResults, score, totalScore });
-};
-
-const getMaxRacePoints = (participantCount: number) => {
-	return (participantCount * (participantCount + 1)) / 2;
 };
 
 const getRaceResult = (
