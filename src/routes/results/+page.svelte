@@ -353,11 +353,11 @@
 					<div class="flex flex-row justify-around">
 						<div>
 							<span class="font-medium text-base-content">Trainer:</span>
-							<span class="text-primary">{$gameSession.selectedTrainer?.name || '—'}</span>
+							<span class="text-primary">{$gameSession?.selectedTrainer?.name || '—'}</span>
 						</div>
 						<div>
 							<span class="font-medium text-base-content">Jockey:</span>
-							<span class="text-primary">{$gameSession.selectedJockey?.name || '—'}</span>
+							<span class="text-primary">{$gameSession?.selectedJockey?.name || '—'}</span>
 						</div>
 					</div>
 					<div class="space-y-2 flex flex-row gap-2">

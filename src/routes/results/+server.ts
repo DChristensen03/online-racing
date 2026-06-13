@@ -8,12 +8,12 @@ export const POST: RequestHandler = async ({ request }) => {
 	const raceResults = Object.entries(gameData.races).map(([raceName, race]) => {
 		const horsesInRace = racePool.filter((horse: any) => horse.race == raceName);
 		const dataHorsesInRace: DataHorse[] = horsesInRace.map((horse: any) =>
-			gameData.horses[raceName].find((h) => h.name === horse.name)
+			gameData.horses[raceName].find((h) => h.name === horse.name && h.year === horse.year)
 		);
 		const playerJockey = gameData.jockeys.find((j) => j.name === jockey?.name);
 		const playerTrainer = gameData.trainers.find((t) => t.name === trainer?.name);
 		const chosenHorse = horsesInRace.find((horse: any) =>
-			selectedHorses.some((h: any) => h.name === horse.name)
+			selectedHorses.some((h: any) => h.name === horse.name && h.year === horse.year)
 		);
 		if (!playerJockey || !playerTrainer) {
 			throw new Error('Invalid jockey or trainer');
@@ -23,9 +23,12 @@ export const POST: RequestHandler = async ({ request }) => {
 			race,
 			playerJockey,
 			playerTrainer,
-			chosenHorse?.name
+			chosenHorse?.name,
+			chosenHorse?.year
 		);
-		const chosenResult = results.find((result) => result.name === chosenHorse?.name);
+		const chosenResult = results.find(
+			(result) => result.name === chosenHorse?.name && result.year === chosenHorse?.year
+		);
 		const points = chosenResult ? results.length - chosenResult.finishPosition + 1 : 0;
 
 		return {
@@ -60,7 +63,8 @@ const getRaceResult = (
 		speedAbility: number;
 		staminaAbility: number;
 	},
-	playerHorseName?: string
+	playerHorseName?: string,
+	playerHorseYear?: number
 ) => {
 	const getStatModifier = (stat: number) => 1 + (stat - 90) / 200;
 	const getCombinedModifier = (trainerStat: number, jockeyStat: number) =>
@@ -90,7 +94,7 @@ const getRaceResult = (
 		const distanceFurlongs = race.distanceFurlongs;
 		const speedWeight = Math.max(0, 1 - (distanceFurlongs - 4) / 12);
 		const staminaWeight = Math.max(0, (distanceFurlongs - 4) / 12);
-		const isPlayerHorse = horse.name === playerHorseName;
+		const isPlayerHorse = horse.name === playerHorseName && horse.year === playerHorseYear;
 		const surfaceAbility = race.surface === Surface.Turf ? horse.turfAbility : horse.dirtAbility;
 		const adjustedSpeed = isPlayerHorse
 			? horse.speed * getCombinedModifier(playerTrainer.speedAbility, playerJockey.speedAbility)
@@ -116,6 +120,10 @@ const getRaceResult = (
 		return { horse, score };
 	});
 	const sorted = raceScores.sort((a, b) => b.score - a.score);
-	// return name and finish position of each horse in sorted
-	return sorted.map((result, index) => ({ name: result.horse.name, finishPosition: index + 1 }));
+	// return name, year, and finish position of each horse in sorted
+	return sorted.map((result, index) => ({
+		name: result.horse.name,
+		year: result.horse.year,
+		finishPosition: index + 1
+	}));
 };
