@@ -195,6 +195,7 @@
 		if (!$gameSession?.selectedHorses?.length || !$gameSession?.racePool?.length) {
 			errorMessage = 'Session data missing. Start a race to see results.';
 			isLoading = false;
+			goto('/');
 			return;
 		}
 
