@@ -507,6 +507,96 @@ const horses: Record<string, DataHorse[]> = {
 			speed: 89,
 			stamina: 84,
 			runningStyle: RunningStyle.Stalker
+		},
+		{
+			name: 'Albertus Maximus',
+			year: 2008,
+			finishPosition: 1,
+			dirtAbility: 94,
+			turfAbility: 25,
+			speed: 94,
+			stamina: 91,
+			runningStyle: RunningStyle.Stalker
+		},
+		{
+			name: 'Rebellion',
+			year: 2008,
+			finishPosition: 2,
+			dirtAbility: 90,
+			turfAbility: 20,
+			speed: 89,
+			stamina: 89,
+			runningStyle: RunningStyle.Closer
+		},
+		{
+			name: 'Two Step Salsa',
+			year: 2008,
+			finishPosition: 3,
+			dirtAbility: 88,
+			turfAbility: 25,
+			speed: 91,
+			stamina: 88,
+			runningStyle: RunningStyle.FrontRunner
+		},
+		{
+			name: 'Furthest Land',
+			year: 2009,
+			finishPosition: 1,
+			dirtAbility: 92,
+			turfAbility: 25,
+			speed: 92,
+			stamina: 90,
+			runningStyle: RunningStyle.Closer
+		},
+		{
+			name: "Ready's Echo",
+			year: 2009,
+			finishPosition: 2,
+			dirtAbility: 89,
+			turfAbility: 20,
+			speed: 89,
+			stamina: 89,
+			runningStyle: RunningStyle.MidPack
+		},
+		{
+			name: 'Midshipman',
+			year: 2009,
+			finishPosition: 3,
+			dirtAbility: 87,
+			turfAbility: 20,
+			speed: 88,
+			stamina: 88,
+			runningStyle: RunningStyle.Stalker
+		},
+		{
+			name: 'Corinthian',
+			year: 2007,
+			finishPosition: 1,
+			dirtAbility: 97,
+			turfAbility: 20,
+			speed: 96,
+			stamina: 92,
+			runningStyle: RunningStyle.Stalker
+		},
+		{
+			name: 'Gottcha Gold',
+			year: 2007,
+			finishPosition: 2,
+			dirtAbility: 94,
+			turfAbility: 20,
+			speed: 93,
+			stamina: 90,
+			runningStyle: RunningStyle.FrontRunner
+		},
+		{
+			name: 'Discreet Cat',
+			year: 2007,
+			finishPosition: 3,
+			dirtAbility: 92,
+			turfAbility: 20,
+			speed: 95,
+			stamina: 89,
+			runningStyle: RunningStyle.FrontRunner
 		}
 	],
 	Classic: [
@@ -1003,6 +1093,811 @@ const horses: Record<string, DataHorse[]> = {
 			turfAbility: 15,
 			speed: 86,
 			stamina: 92,
+			runningStyle: RunningStyle.Closer
+		},
+
+		{
+			name: 'Zenyatta',
+			year: 2009,
+			finishPosition: 1,
+			dirtAbility: 100,
+			turfAbility: 35,
+			speed: 96,
+			stamina: 100,
+			runningStyle: RunningStyle.Closer
+		},
+		{
+			name: 'Gio Ponti',
+			year: 2009,
+			finishPosition: 2,
+			dirtAbility: 90,
+			turfAbility: 99,
+			speed: 93,
+			stamina: 96,
+			runningStyle: RunningStyle.Closer
+		},
+		{
+			name: 'Twice Over',
+			year: 2009,
+			finishPosition: 3,
+			dirtAbility: 88,
+			turfAbility: 92,
+			speed: 91,
+			stamina: 95,
+			runningStyle: RunningStyle.Stalker
+		},
+
+		{
+			name: "Raven's Pass",
+			year: 2008,
+			finishPosition: 1,
+			dirtAbility: 92,
+			turfAbility: 98,
+			speed: 96,
+			stamina: 94,
+			runningStyle: RunningStyle.Closer
+		},
+		{
+			name: 'Henrythenavigator',
+			year: 2008,
+			finishPosition: 2,
+			dirtAbility: 91,
+			turfAbility: 99,
+			speed: 95,
+			stamina: 94,
+			runningStyle: RunningStyle.Stalker
+		},
+		{
+			name: 'Tiago',
+			year: 2008,
+			finishPosition: 3,
+			dirtAbility: 89,
+			turfAbility: 40,
+			speed: 88,
+			stamina: 96,
+			runningStyle: RunningStyle.Closer
+		},
+
+		{
+			name: 'Curlin',
+			year: 2007,
+			finishPosition: 1,
+			dirtAbility: 100,
+			turfAbility: 25,
+			speed: 97,
+			stamina: 100,
+			runningStyle: RunningStyle.Stalker
+		},
+		{
+			name: 'Hard Spun',
+			year: 2007,
+			finishPosition: 2,
+			dirtAbility: 96,
+			turfAbility: 20,
+			speed: 98,
+			stamina: 95,
+			runningStyle: RunningStyle.FrontRunner
+		},
+		{
+			name: 'Awesome Gem',
+			year: 2007,
+			finishPosition: 3,
+			dirtAbility: 91,
+			turfAbility: 30,
+			speed: 90,
+			stamina: 95,
+			runningStyle: RunningStyle.Closer
+		},
+
+		{
+			name: 'Invasor',
+			year: 2006,
+			finishPosition: 1,
+			dirtAbility: 99,
+			turfAbility: 25,
+			speed: 96,
+			stamina: 100,
+			runningStyle: RunningStyle.Stalker
+		},
+		{
+			name: 'Bernardini',
+			year: 2006,
+			finishPosition: 2,
+			dirtAbility: 99,
+			turfAbility: 20,
+			speed: 97,
+			stamina: 98,
+			runningStyle: RunningStyle.Stalker
+		},
+		{
+			name: 'Premium Tap',
+			year: 2006,
+			finishPosition: 3,
+			dirtAbility: 90,
+			turfAbility: 20,
+			speed: 90,
+			stamina: 94,
+			runningStyle: RunningStyle.Stalker
+		},
+
+		{
+			name: 'Saint Liam',
+			year: 2005,
+			finishPosition: 1,
+			dirtAbility: 98,
+			turfAbility: 20,
+			speed: 96,
+			stamina: 97,
+			runningStyle: RunningStyle.Stalker
+		},
+		{
+			name: 'Flower Alley',
+			year: 2005,
+			finishPosition: 2,
+			dirtAbility: 93,
+			turfAbility: 20,
+			speed: 92,
+			stamina: 95,
+			runningStyle: RunningStyle.MidPack
+		},
+		{
+			name: 'Perfect Drift',
+			year: 2005,
+			finishPosition: 3,
+			dirtAbility: 89,
+			turfAbility: 20,
+			speed: 88,
+			stamina: 94,
+			runningStyle: RunningStyle.Closer
+		},
+
+		{
+			name: 'Ghostzapper',
+			year: 2004,
+			finishPosition: 1,
+			dirtAbility: 100,
+			turfAbility: 40,
+			speed: 100,
+			stamina: 97,
+			runningStyle: RunningStyle.FrontRunner
+		},
+		{
+			name: 'Roses in May',
+			year: 2004,
+			finishPosition: 2,
+			dirtAbility: 95,
+			turfAbility: 20,
+			speed: 96,
+			stamina: 95,
+			runningStyle: RunningStyle.FrontRunner
+		},
+		{
+			name: 'Pleasantly Perfect',
+			year: 2004,
+			finishPosition: 3,
+			dirtAbility: 97,
+			turfAbility: 25,
+			speed: 93,
+			stamina: 99,
+			runningStyle: RunningStyle.Closer
+		},
+
+		{
+			name: 'Pleasantly Perfect',
+			year: 2003,
+			finishPosition: 1,
+			dirtAbility: 97,
+			turfAbility: 25,
+			speed: 93,
+			stamina: 99,
+			runningStyle: RunningStyle.Closer
+		},
+		{
+			name: "Medaglia d'Oro",
+			year: 2003,
+			finishPosition: 2,
+			dirtAbility: 98,
+			turfAbility: 30,
+			speed: 95,
+			stamina: 98,
+			runningStyle: RunningStyle.Stalker
+		},
+		{
+			name: 'Dynever',
+			year: 2003,
+			finishPosition: 3,
+			dirtAbility: 88,
+			turfAbility: 20,
+			speed: 87,
+			stamina: 95,
+			runningStyle: RunningStyle.Closer
+		},
+
+		{
+			name: 'Volponi',
+			year: 2002,
+			finishPosition: 1,
+			dirtAbility: 92,
+			turfAbility: 20,
+			speed: 91,
+			stamina: 94,
+			runningStyle: RunningStyle.Closer
+		},
+		{
+			name: "Medaglia d'Oro",
+			year: 2002,
+			finishPosition: 2,
+			dirtAbility: 98,
+			turfAbility: 30,
+			speed: 95,
+			stamina: 98,
+			runningStyle: RunningStyle.Stalker
+		},
+		{
+			name: 'Milwaukee Brew',
+			year: 2002,
+			finishPosition: 3,
+			dirtAbility: 89,
+			turfAbility: 20,
+			speed: 88,
+			stamina: 94,
+			runningStyle: RunningStyle.MidPack
+		},
+
+		{
+			name: 'Tiznow',
+			year: 2001,
+			finishPosition: 1,
+			dirtAbility: 100,
+			turfAbility: 20,
+			speed: 95,
+			stamina: 100,
+			runningStyle: RunningStyle.Stalker
+		},
+		{
+			name: 'Sakhee',
+			year: 2001,
+			finishPosition: 2,
+			dirtAbility: 91,
+			turfAbility: 99,
+			speed: 95,
+			stamina: 96,
+			runningStyle: RunningStyle.Closer
+		},
+		{
+			name: 'Albert the Great',
+			year: 2001,
+			finishPosition: 3,
+			dirtAbility: 92,
+			turfAbility: 20,
+			speed: 94,
+			stamina: 93,
+			runningStyle: RunningStyle.FrontRunner
+		},
+
+		{
+			name: 'Tiznow',
+			year: 2000,
+			finishPosition: 1,
+			dirtAbility: 100,
+			turfAbility: 20,
+			speed: 95,
+			stamina: 100,
+			runningStyle: RunningStyle.Stalker
+		},
+		{
+			name: "Giant's Causeway",
+			year: 2000,
+			finishPosition: 2,
+			dirtAbility: 90,
+			turfAbility: 100,
+			speed: 95,
+			stamina: 97,
+			runningStyle: RunningStyle.Stalker
+		},
+		{
+			name: 'Captain Steve',
+			year: 2000,
+			finishPosition: 3,
+			dirtAbility: 91,
+			turfAbility: 20,
+			speed: 92,
+			stamina: 94,
+			runningStyle: RunningStyle.MidPack
+		},
+
+		{
+			name: 'Cat Thief',
+			year: 1999,
+			finishPosition: 1,
+			dirtAbility: 93,
+			turfAbility: 20,
+			speed: 91,
+			stamina: 96,
+			runningStyle: RunningStyle.Closer
+		},
+		{
+			name: 'Budroyale',
+			year: 1999,
+			finishPosition: 2,
+			dirtAbility: 90,
+			turfAbility: 20,
+			speed: 89,
+			stamina: 94,
+			runningStyle: RunningStyle.MidPack
+		},
+		{
+			name: 'Golden Missile',
+			year: 1999,
+			finishPosition: 3,
+			dirtAbility: 89,
+			turfAbility: 20,
+			speed: 91,
+			stamina: 92,
+			runningStyle: RunningStyle.FrontRunner
+		},
+
+		{
+			name: 'Awesome Again',
+			year: 1998,
+			finishPosition: 1,
+			dirtAbility: 98,
+			turfAbility: 20,
+			speed: 95,
+			stamina: 99,
+			runningStyle: RunningStyle.Stalker
+		},
+		{
+			name: 'Silver Charm',
+			year: 1998,
+			finishPosition: 2,
+			dirtAbility: 98,
+			turfAbility: 20,
+			speed: 94,
+			stamina: 99,
+			runningStyle: RunningStyle.Stalker
+		},
+		{
+			name: 'Swain',
+			year: 1998,
+			finishPosition: 3,
+			dirtAbility: 89,
+			turfAbility: 98,
+			speed: 91,
+			stamina: 97,
+			runningStyle: RunningStyle.Closer
+		},
+
+		{
+			name: 'Skip Away',
+			year: 1997,
+			finishPosition: 1,
+			dirtAbility: 99,
+			turfAbility: 20,
+			speed: 96,
+			stamina: 99,
+			runningStyle: RunningStyle.Stalker
+		},
+		{
+			name: 'Deputy Commander',
+			year: 1997,
+			finishPosition: 2,
+			dirtAbility: 94,
+			turfAbility: 20,
+			speed: 92,
+			stamina: 95,
+			runningStyle: RunningStyle.Stalker
+		},
+		{
+			name: 'Dowty',
+			year: 1997,
+			finishPosition: 3,
+			dirtAbility: 86,
+			turfAbility: 70,
+			speed: 88,
+			stamina: 93,
+			runningStyle: RunningStyle.Closer
+		},
+
+		{
+			name: 'Alphabet Soup',
+			year: 1996,
+			finishPosition: 1,
+			dirtAbility: 95,
+			turfAbility: 20,
+			speed: 92,
+			stamina: 96,
+			runningStyle: RunningStyle.Stalker
+		},
+		{
+			name: 'Louis Quatorze',
+			year: 1996,
+			finishPosition: 2,
+			dirtAbility: 93,
+			turfAbility: 20,
+			speed: 94,
+			stamina: 93,
+			runningStyle: RunningStyle.FrontRunner
+		},
+		{
+			name: 'Cigar',
+			year: 1996,
+			finishPosition: 3,
+			dirtAbility: 100,
+			turfAbility: 25,
+			speed: 96,
+			stamina: 100,
+			runningStyle: RunningStyle.Stalker
+		},
+
+		{
+			name: 'Cigar',
+			year: 1995,
+			finishPosition: 1,
+			dirtAbility: 100,
+			turfAbility: 25,
+			speed: 96,
+			stamina: 100,
+			runningStyle: RunningStyle.Stalker
+		},
+		{
+			name: "L'Carriere",
+			year: 1995,
+			finishPosition: 2,
+			dirtAbility: 90,
+			turfAbility: 20,
+			speed: 88,
+			stamina: 95,
+			runningStyle: RunningStyle.Closer
+		},
+		{
+			name: 'Unaccounted For',
+			year: 1995,
+			finishPosition: 3,
+			dirtAbility: 91,
+			turfAbility: 20,
+			speed: 89,
+			stamina: 95,
+			runningStyle: RunningStyle.Stalker
+		},
+		{
+			name: 'Concern',
+			year: 1994,
+			finishPosition: 1,
+			dirtAbility: 94,
+			turfAbility: 20,
+			speed: 91,
+			stamina: 97,
+			runningStyle: RunningStyle.Closer
+		},
+		{
+			name: 'Tabasco Cat',
+			year: 1994,
+			finishPosition: 2,
+			dirtAbility: 95,
+			turfAbility: 20,
+			speed: 93,
+			stamina: 96,
+			runningStyle: RunningStyle.Stalker
+		},
+		{
+			name: 'Dramatic Gold',
+			year: 1994,
+			finishPosition: 3,
+			dirtAbility: 89,
+			turfAbility: 20,
+			speed: 88,
+			stamina: 94,
+			runningStyle: RunningStyle.MidPack
+		},
+
+		{
+			name: 'Arcangues',
+			year: 1993,
+			finishPosition: 1,
+			dirtAbility: 90,
+			turfAbility: 98,
+			speed: 90,
+			stamina: 96,
+			runningStyle: RunningStyle.Closer
+		},
+		{
+			name: 'Bertrando',
+			year: 1993,
+			finishPosition: 2,
+			dirtAbility: 95,
+			turfAbility: 20,
+			speed: 97,
+			stamina: 93,
+			runningStyle: RunningStyle.FrontRunner
+		},
+		{
+			name: 'Kissin Kris',
+			year: 1993,
+			finishPosition: 3,
+			dirtAbility: 91,
+			turfAbility: 20,
+			speed: 90,
+			stamina: 95,
+			runningStyle: RunningStyle.Closer
+		},
+
+		{
+			name: 'A.P. Indy',
+			year: 1992,
+			finishPosition: 1,
+			dirtAbility: 99,
+			turfAbility: 25,
+			speed: 95,
+			stamina: 100,
+			runningStyle: RunningStyle.Stalker
+		},
+		{
+			name: 'Pleasant Tap',
+			year: 1992,
+			finishPosition: 2,
+			dirtAbility: 97,
+			turfAbility: 20,
+			speed: 94,
+			stamina: 98,
+			runningStyle: RunningStyle.Stalker
+		},
+		{
+			name: 'Jolypha',
+			year: 1992,
+			finishPosition: 3,
+			dirtAbility: 88,
+			turfAbility: 97,
+			speed: 89,
+			stamina: 95,
+			runningStyle: RunningStyle.Closer
+		},
+
+		{
+			name: 'Black Tie Affair',
+			year: 1991,
+			finishPosition: 1,
+			dirtAbility: 96,
+			turfAbility: 20,
+			speed: 93,
+			stamina: 98,
+			runningStyle: RunningStyle.Stalker
+		},
+		{
+			name: 'Twilight Agenda',
+			year: 1991,
+			finishPosition: 2,
+			dirtAbility: 89,
+			turfAbility: 92,
+			speed: 89,
+			stamina: 95,
+			runningStyle: RunningStyle.Closer
+		},
+		{
+			name: 'Unbridled',
+			year: 1991,
+			finishPosition: 3,
+			dirtAbility: 98,
+			turfAbility: 20,
+			speed: 93,
+			stamina: 99,
+			runningStyle: RunningStyle.Closer
+		},
+
+		{
+			name: 'Unbridled',
+			year: 1990,
+			finishPosition: 1,
+			dirtAbility: 98,
+			turfAbility: 20,
+			speed: 93,
+			stamina: 99,
+			runningStyle: RunningStyle.Closer
+		},
+		{
+			name: 'Ibn Bey',
+			year: 1990,
+			finishPosition: 2,
+			dirtAbility: 87,
+			turfAbility: 95,
+			speed: 89,
+			stamina: 96,
+			runningStyle: RunningStyle.Closer
+		},
+		{
+			name: 'Thirty Six Red',
+			year: 1990,
+			finishPosition: 3,
+			dirtAbility: 91,
+			turfAbility: 20,
+			speed: 90,
+			stamina: 95,
+			runningStyle: RunningStyle.MidPack
+		},
+
+		{
+			name: 'Sunday Silence',
+			year: 1989,
+			finishPosition: 1,
+			dirtAbility: 99,
+			turfAbility: 25,
+			speed: 96,
+			stamina: 99,
+			runningStyle: RunningStyle.Closer
+		},
+		{
+			name: 'Easy Goer',
+			year: 1989,
+			finishPosition: 2,
+			dirtAbility: 99,
+			turfAbility: 25,
+			speed: 97,
+			stamina: 99,
+			runningStyle: RunningStyle.Stalker
+		},
+		{
+			name: 'Blushing John',
+			year: 1989,
+			finishPosition: 3,
+			dirtAbility: 94,
+			turfAbility: 35,
+			speed: 92,
+			stamina: 96,
+			runningStyle: RunningStyle.Stalker
+		},
+
+		{
+			name: 'Alysheba',
+			year: 1988,
+			finishPosition: 1,
+			dirtAbility: 99,
+			turfAbility: 25,
+			speed: 95,
+			stamina: 99,
+			runningStyle: RunningStyle.Stalker
+		},
+		{
+			name: 'Seeking the Gold',
+			year: 1988,
+			finishPosition: 2,
+			dirtAbility: 98,
+			turfAbility: 25,
+			speed: 97,
+			stamina: 96,
+			runningStyle: RunningStyle.Stalker
+		},
+		{
+			name: 'Waquoit',
+			year: 1988,
+			finishPosition: 3,
+			dirtAbility: 91,
+			turfAbility: 40,
+			speed: 90,
+			stamina: 95,
+			runningStyle: RunningStyle.MidPack
+		},
+
+		{
+			name: 'Ferdinand',
+			year: 1987,
+			finishPosition: 1,
+			dirtAbility: 98,
+			turfAbility: 25,
+			speed: 94,
+			stamina: 99,
+			runningStyle: RunningStyle.Closer
+		},
+		{
+			name: 'Alysheba',
+			year: 1987,
+			finishPosition: 2,
+			dirtAbility: 99,
+			turfAbility: 25,
+			speed: 95,
+			stamina: 99,
+			runningStyle: RunningStyle.Stalker
+		},
+		{
+			name: 'Judge Angelucci',
+			year: 1987,
+			finishPosition: 3,
+			dirtAbility: 93,
+			turfAbility: 20,
+			speed: 95,
+			stamina: 92,
+			runningStyle: RunningStyle.FrontRunner
+		},
+
+		{
+			name: 'Skywalker',
+			year: 1986,
+			finishPosition: 1,
+			dirtAbility: 95,
+			turfAbility: 20,
+			speed: 92,
+			stamina: 97,
+			runningStyle: RunningStyle.Stalker
+		},
+		{
+			name: 'Turkoman',
+			year: 1986,
+			finishPosition: 2,
+			dirtAbility: 97,
+			turfAbility: 20,
+			speed: 94,
+			stamina: 98,
+			runningStyle: RunningStyle.Closer
+		},
+		{
+			name: 'Precisionist',
+			year: 1986,
+			finishPosition: 3,
+			dirtAbility: 96,
+			turfAbility: 20,
+			speed: 99,
+			stamina: 90,
+			runningStyle: RunningStyle.FrontRunner
+		},
+
+		{
+			name: 'Proud Truth',
+			year: 1985,
+			finishPosition: 1,
+			dirtAbility: 94,
+			turfAbility: 20,
+			speed: 92,
+			stamina: 97,
+			runningStyle: RunningStyle.Stalker
+		},
+		{
+			name: 'Gate Dancer',
+			year: 1985,
+			finishPosition: 2,
+			dirtAbility: 92,
+			turfAbility: 20,
+			speed: 90,
+			stamina: 95,
+			runningStyle: RunningStyle.Closer
+		},
+		{
+			name: 'Turkoman',
+			year: 1985,
+			finishPosition: 3,
+			dirtAbility: 97,
+			turfAbility: 20,
+			speed: 94,
+			stamina: 98,
+			runningStyle: RunningStyle.Closer
+		},
+
+		{
+			name: 'Wild Again',
+			year: 1984,
+			finishPosition: 1,
+			dirtAbility: 95,
+			turfAbility: 20,
+			speed: 92,
+			stamina: 97,
+			runningStyle: RunningStyle.FrontRunner
+		},
+		{
+			name: "Slew o' Gold",
+			year: 1984,
+			finishPosition: 2,
+			dirtAbility: 99,
+			turfAbility: 25,
+			speed: 95,
+			stamina: 99,
+			runningStyle: RunningStyle.Stalker
+		},
+		{
+			name: 'Gate Dancer',
+			year: 1984,
+			finishPosition: 3,
+			dirtAbility: 92,
+			turfAbility: 20,
+			speed: 90,
+			stamina: 95,
 			runningStyle: RunningStyle.Closer
 		}
 	],
@@ -1501,6 +2396,810 @@ const horses: Record<string, DataHorse[]> = {
 			speed: 90,
 			stamina: 97,
 			runningStyle: RunningStyle.Stalker
+		},
+		{
+			name: 'Conduit',
+			year: 2009,
+			finishPosition: 1,
+			dirtAbility: 25,
+			turfAbility: 98,
+			speed: 94,
+			stamina: 99,
+			runningStyle: RunningStyle.Closer
+		},
+		{
+			name: 'Presious Passion',
+			year: 2009,
+			finishPosition: 2,
+			dirtAbility: 20,
+			turfAbility: 95,
+			speed: 93,
+			stamina: 98,
+			runningStyle: RunningStyle.FrontRunner
+		},
+		{
+			name: 'Dar Re Mi',
+			year: 2009,
+			finishPosition: 3,
+			dirtAbility: 20,
+			turfAbility: 93,
+			speed: 92,
+			stamina: 97,
+			runningStyle: RunningStyle.Stalker
+		},
+
+		{
+			name: 'Conduit',
+			year: 2008,
+			finishPosition: 1,
+			dirtAbility: 25,
+			turfAbility: 97,
+			speed: 94,
+			stamina: 99,
+			runningStyle: RunningStyle.Closer
+		},
+		{
+			name: 'Eagle Mountain',
+			year: 2008,
+			finishPosition: 2,
+			dirtAbility: 20,
+			turfAbility: 94,
+			speed: 92,
+			stamina: 97,
+			runningStyle: RunningStyle.Stalker
+		},
+		{
+			name: 'Dancing Forever',
+			year: 2008,
+			finishPosition: 3,
+			dirtAbility: 20,
+			turfAbility: 91,
+			speed: 90,
+			stamina: 95,
+			runningStyle: RunningStyle.Closer
+		},
+
+		{
+			name: 'English Channel',
+			year: 2007,
+			finishPosition: 1,
+			dirtAbility: 25,
+			turfAbility: 99,
+			speed: 95,
+			stamina: 99,
+			runningStyle: RunningStyle.FrontRunner
+		},
+		{
+			name: 'Shamdinan',
+			year: 2007,
+			finishPosition: 2,
+			dirtAbility: 20,
+			turfAbility: 93,
+			speed: 91,
+			stamina: 96,
+			runningStyle: RunningStyle.Stalker
+		},
+		{
+			name: 'Red Rocks',
+			year: 2007,
+			finishPosition: 3,
+			dirtAbility: 20,
+			turfAbility: 91,
+			speed: 90,
+			stamina: 96,
+			runningStyle: RunningStyle.Closer
+		},
+
+		{
+			name: 'Red Rocks',
+			year: 2006,
+			finishPosition: 1,
+			dirtAbility: 20,
+			turfAbility: 97,
+			speed: 93,
+			stamina: 98,
+			runningStyle: RunningStyle.Closer
+		},
+		{
+			name: 'Better Talk Now',
+			year: 2006,
+			finishPosition: 2,
+			dirtAbility: 20,
+			turfAbility: 95,
+			speed: 91,
+			stamina: 98,
+			runningStyle: RunningStyle.Closer
+		},
+		{
+			name: 'English Channel',
+			year: 2006,
+			finishPosition: 3,
+			dirtAbility: 25,
+			turfAbility: 93,
+			speed: 93,
+			stamina: 97,
+			runningStyle: RunningStyle.FrontRunner
+		},
+
+		{
+			name: 'Shirocco',
+			year: 2005,
+			finishPosition: 1,
+			dirtAbility: 25,
+			turfAbility: 98,
+			speed: 94,
+			stamina: 99,
+			runningStyle: RunningStyle.Closer
+		},
+		{
+			name: 'Ace',
+			year: 2005,
+			finishPosition: 2,
+			dirtAbility: 20,
+			turfAbility: 94,
+			speed: 91,
+			stamina: 97,
+			runningStyle: RunningStyle.Stalker
+		},
+		{
+			name: 'Azamour',
+			year: 2005,
+			finishPosition: 3,
+			dirtAbility: 20,
+			turfAbility: 92,
+			speed: 92,
+			stamina: 96,
+			runningStyle: RunningStyle.Closer
+		},
+
+		{
+			name: 'Better Talk Now',
+			year: 2004,
+			finishPosition: 1,
+			dirtAbility: 20,
+			turfAbility: 96,
+			speed: 91,
+			stamina: 98,
+			runningStyle: RunningStyle.Closer
+		},
+		{
+			name: "Kitten's Joy",
+			year: 2004,
+			finishPosition: 2,
+			dirtAbility: 20,
+			turfAbility: 94,
+			speed: 92,
+			stamina: 97,
+			runningStyle: RunningStyle.Stalker
+		},
+		{
+			name: 'Powerscourt',
+			year: 2004,
+			finishPosition: 3,
+			dirtAbility: 20,
+			turfAbility: 92,
+			speed: 91,
+			stamina: 96,
+			runningStyle: RunningStyle.Closer
+		},
+
+		{
+			name: 'Johar',
+			year: 2003,
+			finishPosition: 1,
+			dirtAbility: 20,
+			turfAbility: 96,
+			speed: 92,
+			stamina: 97,
+			runningStyle: RunningStyle.Closer
+		},
+		{
+			name: 'High Chaparral',
+			year: 2003,
+			finishPosition: 2,
+			dirtAbility: 20,
+			turfAbility: 95,
+			speed: 93,
+			stamina: 98,
+			runningStyle: RunningStyle.Stalker
+		},
+		{
+			name: 'Falbrav',
+			year: 2003,
+			finishPosition: 3,
+			dirtAbility: 20,
+			turfAbility: 93,
+			speed: 93,
+			stamina: 96,
+			runningStyle: RunningStyle.Closer
+		},
+
+		{
+			name: 'High Chaparral',
+			year: 2002,
+			finishPosition: 1,
+			dirtAbility: 20,
+			turfAbility: 98,
+			speed: 94,
+			stamina: 99,
+			runningStyle: RunningStyle.Stalker
+		},
+		{
+			name: 'With Anticipation',
+			year: 2002,
+			finishPosition: 2,
+			dirtAbility: 20,
+			turfAbility: 94,
+			speed: 91,
+			stamina: 97,
+			runningStyle: RunningStyle.FrontRunner
+		},
+		{
+			name: 'Falcon Flight',
+			year: 2002,
+			finishPosition: 3,
+			dirtAbility: 20,
+			turfAbility: 91,
+			speed: 90,
+			stamina: 95,
+			runningStyle: RunningStyle.Closer
+		},
+
+		{
+			name: 'Fantastic Light',
+			year: 2001,
+			finishPosition: 1,
+			dirtAbility: 30,
+			turfAbility: 99,
+			speed: 95,
+			stamina: 99,
+			runningStyle: RunningStyle.Stalker
+		},
+		{
+			name: 'Milan',
+			year: 2001,
+			finishPosition: 2,
+			dirtAbility: 20,
+			turfAbility: 95,
+			speed: 91,
+			stamina: 98,
+			runningStyle: RunningStyle.Closer
+		},
+		{
+			name: 'Timboroa',
+			year: 2001,
+			finishPosition: 3,
+			dirtAbility: 20,
+			turfAbility: 92,
+			speed: 90,
+			stamina: 96,
+			runningStyle: RunningStyle.Closer
+		},
+
+		{
+			name: 'Kalanisi',
+			year: 2000,
+			finishPosition: 1,
+			dirtAbility: 20,
+			turfAbility: 98,
+			speed: 93,
+			stamina: 99,
+			runningStyle: RunningStyle.Closer
+		},
+		{
+			name: 'Quiet Resolve',
+			year: 2000,
+			finishPosition: 2,
+			dirtAbility: 20,
+			turfAbility: 94,
+			speed: 91,
+			stamina: 97,
+			runningStyle: RunningStyle.Stalker
+		},
+		{
+			name: "John's Call",
+			year: 2000,
+			finishPosition: 3,
+			dirtAbility: 20,
+			turfAbility: 91,
+			speed: 88,
+			stamina: 98,
+			runningStyle: RunningStyle.Closer
+		},
+
+		{
+			name: 'Daylami',
+			year: 1999,
+			finishPosition: 1,
+			dirtAbility: 30,
+			turfAbility: 99,
+			speed: 95,
+			stamina: 99,
+			runningStyle: RunningStyle.Closer
+		},
+		{
+			name: 'Royal Anthem',
+			year: 1999,
+			finishPosition: 2,
+			dirtAbility: 20,
+			turfAbility: 95,
+			speed: 92,
+			stamina: 97,
+			runningStyle: RunningStyle.Stalker
+		},
+		{
+			name: "Buck's Boy",
+			year: 1999,
+			finishPosition: 3,
+			dirtAbility: 20,
+			turfAbility: 93,
+			speed: 90,
+			stamina: 98,
+			runningStyle: RunningStyle.Closer
+		},
+
+		{
+			name: "Buck's Boy",
+			year: 1998,
+			finishPosition: 1,
+			dirtAbility: 20,
+			turfAbility: 96,
+			speed: 90,
+			stamina: 99,
+			runningStyle: RunningStyle.Closer
+		},
+		{
+			name: 'Yagli',
+			year: 1998,
+			finishPosition: 2,
+			dirtAbility: 20,
+			turfAbility: 93,
+			speed: 90,
+			stamina: 97,
+			runningStyle: RunningStyle.Stalker
+		},
+		{
+			name: 'Dushyantor',
+			year: 1998,
+			finishPosition: 3,
+			dirtAbility: 20,
+			turfAbility: 91,
+			speed: 89,
+			stamina: 96,
+			runningStyle: RunningStyle.Closer
+		},
+
+		{
+			name: 'Chief Bearhart',
+			year: 1997,
+			finishPosition: 1,
+			dirtAbility: 20,
+			turfAbility: 98,
+			speed: 92,
+			stamina: 99,
+			runningStyle: RunningStyle.Closer
+		},
+		{
+			name: 'Borgia',
+			year: 1997,
+			finishPosition: 2,
+			dirtAbility: 20,
+			turfAbility: 95,
+			speed: 91,
+			stamina: 98,
+			runningStyle: RunningStyle.Stalker
+		},
+		{
+			name: 'Flag Down',
+			year: 1997,
+			finishPosition: 3,
+			dirtAbility: 20,
+			turfAbility: 92,
+			speed: 90,
+			stamina: 96,
+			runningStyle: RunningStyle.Closer
+		},
+
+		{
+			name: 'Pilsudski',
+			year: 1996,
+			finishPosition: 1,
+			dirtAbility: 20,
+			turfAbility: 99,
+			speed: 94,
+			stamina: 99,
+			runningStyle: RunningStyle.Stalker
+		},
+		{
+			name: 'Singspiel',
+			year: 1996,
+			finishPosition: 2,
+			dirtAbility: 25,
+			turfAbility: 97,
+			speed: 93,
+			stamina: 98,
+			runningStyle: RunningStyle.Stalker
+		},
+		{
+			name: 'Swain',
+			year: 1996,
+			finishPosition: 3,
+			dirtAbility: 25,
+			turfAbility: 94,
+			speed: 92,
+			stamina: 98,
+			runningStyle: RunningStyle.Closer
+		},
+
+		{
+			name: 'Northern Spur',
+			year: 1995,
+			finishPosition: 1,
+			dirtAbility: 20,
+			turfAbility: 96,
+			speed: 91,
+			stamina: 98,
+			runningStyle: RunningStyle.Closer
+		},
+		{
+			name: 'Freedom Cry',
+			year: 1995,
+			finishPosition: 2,
+			dirtAbility: 20,
+			turfAbility: 92,
+			speed: 89,
+			stamina: 96,
+			runningStyle: RunningStyle.Stalker
+		},
+		{
+			name: 'Carnegie',
+			year: 1995,
+			finishPosition: 3,
+			dirtAbility: 20,
+			turfAbility: 90,
+			speed: 89,
+			stamina: 97,
+			runningStyle: RunningStyle.Closer
+		},
+		{
+			name: 'Tikkanen',
+			year: 1994,
+			finishPosition: 1,
+			dirtAbility: 20,
+			turfAbility: 96,
+			speed: 91,
+			stamina: 98,
+			runningStyle: RunningStyle.Closer
+		},
+		{
+			name: 'Hatoof',
+			year: 1994,
+			finishPosition: 2,
+			dirtAbility: 20,
+			turfAbility: 94,
+			speed: 92,
+			stamina: 96,
+			runningStyle: RunningStyle.Stalker
+		},
+		{
+			name: 'Paradise Creek',
+			year: 1994,
+			finishPosition: 3,
+			dirtAbility: 20,
+			turfAbility: 92,
+			speed: 91,
+			stamina: 95,
+			runningStyle: RunningStyle.Closer
+		},
+
+		{
+			name: 'Kotashaan',
+			year: 1993,
+			finishPosition: 1,
+			dirtAbility: 20,
+			turfAbility: 99,
+			speed: 94,
+			stamina: 99,
+			runningStyle: RunningStyle.Closer
+		},
+		{
+			name: 'Bien Bien',
+			year: 1993,
+			finishPosition: 2,
+			dirtAbility: 20,
+			turfAbility: 96,
+			speed: 92,
+			stamina: 98,
+			runningStyle: RunningStyle.Stalker
+		},
+		{
+			name: 'Luazur',
+			year: 1993,
+			finishPosition: 3,
+			dirtAbility: 20,
+			turfAbility: 93,
+			speed: 90,
+			stamina: 97,
+			runningStyle: RunningStyle.Closer
+		},
+
+		{
+			name: 'Fraise',
+			year: 1992,
+			finishPosition: 1,
+			dirtAbility: 20,
+			turfAbility: 97,
+			speed: 92,
+			stamina: 99,
+			runningStyle: RunningStyle.Closer
+		},
+		{
+			name: 'Sky Classic',
+			year: 1992,
+			finishPosition: 2,
+			dirtAbility: 20,
+			turfAbility: 95,
+			speed: 91,
+			stamina: 98,
+			runningStyle: RunningStyle.Stalker
+		},
+		{
+			name: 'Quest For Fame',
+			year: 1992,
+			finishPosition: 3,
+			dirtAbility: 20,
+			turfAbility: 92,
+			speed: 90,
+			stamina: 96,
+			runningStyle: RunningStyle.Closer
+		},
+
+		{
+			name: 'Miss Alleged',
+			year: 1991,
+			finishPosition: 1,
+			dirtAbility: 20,
+			turfAbility: 98,
+			speed: 93,
+			stamina: 99,
+			runningStyle: RunningStyle.Closer
+		},
+		{
+			name: 'Itsallgreektome',
+			year: 1991,
+			finishPosition: 2,
+			dirtAbility: 20,
+			turfAbility: 94,
+			speed: 91,
+			stamina: 97,
+			runningStyle: RunningStyle.Stalker
+		},
+		{
+			name: 'Quest For Fame',
+			year: 1991,
+			finishPosition: 3,
+			dirtAbility: 20,
+			turfAbility: 92,
+			speed: 90,
+			stamina: 96,
+			runningStyle: RunningStyle.Closer
+		},
+
+		{
+			name: 'In The Wings',
+			year: 1990,
+			finishPosition: 1,
+			dirtAbility: 20,
+			turfAbility: 98,
+			speed: 93,
+			stamina: 99,
+			runningStyle: RunningStyle.Closer
+		},
+		{
+			name: 'With Approval',
+			year: 1990,
+			finishPosition: 2,
+			dirtAbility: 20,
+			turfAbility: 95,
+			speed: 91,
+			stamina: 97,
+			runningStyle: RunningStyle.Stalker
+		},
+		{
+			name: 'El Senor',
+			year: 1990,
+			finishPosition: 3,
+			dirtAbility: 20,
+			turfAbility: 92,
+			speed: 91,
+			stamina: 95,
+			runningStyle: RunningStyle.Closer
+		},
+
+		{
+			name: 'Prized',
+			year: 1989,
+			finishPosition: 1,
+			dirtAbility: 30,
+			turfAbility: 96,
+			speed: 92,
+			stamina: 97,
+			runningStyle: RunningStyle.Stalker
+		},
+		{
+			name: 'Sierra Roberta',
+			year: 1989,
+			finishPosition: 2,
+			dirtAbility: 20,
+			turfAbility: 93,
+			speed: 90,
+			stamina: 96,
+			runningStyle: RunningStyle.Closer
+		},
+		{
+			name: 'Star Lift',
+			year: 1989,
+			finishPosition: 3,
+			dirtAbility: 20,
+			turfAbility: 90,
+			speed: 89,
+			stamina: 95,
+			runningStyle: RunningStyle.MidPack
+		},
+
+		{
+			name: 'Great Communicator',
+			year: 1988,
+			finishPosition: 1,
+			dirtAbility: 20,
+			turfAbility: 95,
+			speed: 90,
+			stamina: 98,
+			runningStyle: RunningStyle.Closer
+		},
+		{
+			name: 'Sunshine Forever',
+			year: 1988,
+			finishPosition: 2,
+			dirtAbility: 20,
+			turfAbility: 93,
+			speed: 90,
+			stamina: 97,
+			runningStyle: RunningStyle.Stalker
+		},
+		{
+			name: 'Indian Skimmer',
+			year: 1988,
+			finishPosition: 3,
+			dirtAbility: 20,
+			turfAbility: 91,
+			speed: 91,
+			stamina: 95,
+			runningStyle: RunningStyle.Closer
+		},
+
+		{
+			name: 'Theatrical',
+			year: 1987,
+			finishPosition: 1,
+			dirtAbility: 20,
+			turfAbility: 99,
+			speed: 94,
+			stamina: 99,
+			runningStyle: RunningStyle.Closer
+		},
+		{
+			name: 'Trempolino',
+			year: 1987,
+			finishPosition: 2,
+			dirtAbility: 20,
+			turfAbility: 96,
+			speed: 92,
+			stamina: 98,
+			runningStyle: RunningStyle.Stalker
+		},
+		{
+			name: 'Village Star',
+			year: 1987,
+			finishPosition: 3,
+			dirtAbility: 20,
+			turfAbility: 92,
+			speed: 90,
+			stamina: 96,
+			runningStyle: RunningStyle.Closer
+		},
+
+		{
+			name: 'Manila',
+			year: 1986,
+			finishPosition: 1,
+			dirtAbility: 20,
+			turfAbility: 99,
+			speed: 94,
+			stamina: 99,
+			runningStyle: RunningStyle.Closer
+		},
+		{
+			name: 'Theatrical',
+			year: 1986,
+			finishPosition: 2,
+			dirtAbility: 20,
+			turfAbility: 96,
+			speed: 92,
+			stamina: 98,
+			runningStyle: RunningStyle.Closer
+		},
+		{
+			name: 'Estrapade',
+			year: 1986,
+			finishPosition: 3,
+			dirtAbility: 20,
+			turfAbility: 93,
+			speed: 91,
+			stamina: 96,
+			runningStyle: RunningStyle.Stalker
+		},
+
+		{
+			name: 'Pebbles',
+			year: 1985,
+			finishPosition: 1,
+			dirtAbility: 20,
+			turfAbility: 98,
+			speed: 95,
+			stamina: 96,
+			runningStyle: RunningStyle.Closer
+		},
+		{
+			name: 'Strawberry Road',
+			year: 1985,
+			finishPosition: 2,
+			dirtAbility: 20,
+			turfAbility: 95,
+			speed: 92,
+			stamina: 98,
+			runningStyle: RunningStyle.Stalker
+		},
+		{
+			name: 'Mourjane',
+			year: 1985,
+			finishPosition: 3,
+			dirtAbility: 20,
+			turfAbility: 91,
+			speed: 89,
+			stamina: 96,
+			runningStyle: RunningStyle.Closer
+		},
+
+		{
+			name: 'Lashkari',
+			year: 1984,
+			finishPosition: 1,
+			dirtAbility: 20,
+			turfAbility: 96,
+			speed: 91,
+			stamina: 99,
+			runningStyle: RunningStyle.Closer
+		},
+		{
+			name: 'All Along',
+			year: 1984,
+			finishPosition: 2,
+			dirtAbility: 20,
+			turfAbility: 94,
+			speed: 92,
+			stamina: 97,
+			runningStyle: RunningStyle.Stalker
+		},
+		{
+			name: 'Raami',
+			year: 1984,
+			finishPosition: 3,
+			dirtAbility: 20,
+			turfAbility: 90,
+			speed: 89,
+			stamina: 95,
+			runningStyle: RunningStyle.Closer
 		}
 	],
 	Sprint: [
@@ -1998,6 +3697,810 @@ const horses: Record<string, DataHorse[]> = {
 			speed: 93,
 			stamina: 78,
 			runningStyle: RunningStyle.Closer
+		},
+		{
+			name: 'Dancing In Silks',
+			year: 2009,
+			finishPosition: 1,
+			dirtAbility: 95,
+			turfAbility: 20,
+			speed: 96,
+			stamina: 58,
+			runningStyle: RunningStyle.Stalker
+		},
+		{
+			name: 'Crown of Thorns',
+			year: 2009,
+			finishPosition: 2,
+			dirtAbility: 92,
+			turfAbility: 20,
+			speed: 95,
+			stamina: 56,
+			runningStyle: RunningStyle.FrontRunner
+		},
+		{
+			name: 'Cost Of Freedom',
+			year: 2009,
+			finishPosition: 3,
+			dirtAbility: 89,
+			turfAbility: 20,
+			speed: 94,
+			stamina: 55,
+			runningStyle: RunningStyle.Closer
+		},
+
+		{
+			name: 'Midnight Lute',
+			year: 2008,
+			finishPosition: 1,
+			dirtAbility: 99,
+			turfAbility: 20,
+			speed: 99,
+			stamina: 62,
+			runningStyle: RunningStyle.Closer
+		},
+		{
+			name: 'Fatal Bullet',
+			year: 2008,
+			finishPosition: 2,
+			dirtAbility: 95,
+			turfAbility: 20,
+			speed: 97,
+			stamina: 58,
+			runningStyle: RunningStyle.FrontRunner
+		},
+		{
+			name: 'Street Boss',
+			year: 2008,
+			finishPosition: 3,
+			dirtAbility: 93,
+			turfAbility: 25,
+			speed: 96,
+			stamina: 57,
+			runningStyle: RunningStyle.Closer
+		},
+
+		{
+			name: 'Midnight Lute',
+			year: 2007,
+			finishPosition: 1,
+			dirtAbility: 98,
+			turfAbility: 20,
+			speed: 99,
+			stamina: 61,
+			runningStyle: RunningStyle.Closer
+		},
+		{
+			name: 'Idiot Proof',
+			year: 2007,
+			finishPosition: 2,
+			dirtAbility: 93,
+			turfAbility: 20,
+			speed: 95,
+			stamina: 56,
+			runningStyle: RunningStyle.FrontRunner
+		},
+		{
+			name: 'Talent Search',
+			year: 2007,
+			finishPosition: 3,
+			dirtAbility: 90,
+			turfAbility: 20,
+			speed: 93,
+			stamina: 54,
+			runningStyle: RunningStyle.Closer
+		},
+
+		{
+			name: "Thor's Echo",
+			year: 2006,
+			finishPosition: 1,
+			dirtAbility: 95,
+			turfAbility: 20,
+			speed: 96,
+			stamina: 57,
+			runningStyle: RunningStyle.Closer
+		},
+		{
+			name: 'Friendly Island',
+			year: 2006,
+			finishPosition: 2,
+			dirtAbility: 92,
+			turfAbility: 20,
+			speed: 95,
+			stamina: 55,
+			runningStyle: RunningStyle.FrontRunner
+		},
+		{
+			name: 'Nightmare Affair',
+			year: 2006,
+			finishPosition: 3,
+			dirtAbility: 89,
+			turfAbility: 20,
+			speed: 93,
+			stamina: 54,
+			runningStyle: RunningStyle.Stalker
+		},
+
+		{
+			name: 'Silver Train',
+			year: 2005,
+			finishPosition: 1,
+			dirtAbility: 95,
+			turfAbility: 20,
+			speed: 96,
+			stamina: 58,
+			runningStyle: RunningStyle.Closer
+		},
+		{
+			name: 'Taste of Paradise',
+			year: 2005,
+			finishPosition: 2,
+			dirtAbility: 92,
+			turfAbility: 30,
+			speed: 95,
+			stamina: 56,
+			runningStyle: RunningStyle.Closer
+		},
+		{
+			name: 'Lion Tamer',
+			year: 2005,
+			finishPosition: 3,
+			dirtAbility: 89,
+			turfAbility: 20,
+			speed: 93,
+			stamina: 54,
+			runningStyle: RunningStyle.MidPack
+		},
+
+		{
+			name: 'Speightstown',
+			year: 2004,
+			finishPosition: 1,
+			dirtAbility: 99,
+			turfAbility: 20,
+			speed: 99,
+			stamina: 63,
+			runningStyle: RunningStyle.FrontRunner
+		},
+		{
+			name: 'Kela',
+			year: 2004,
+			finishPosition: 2,
+			dirtAbility: 95,
+			turfAbility: 20,
+			speed: 96,
+			stamina: 58,
+			runningStyle: RunningStyle.Closer
+		},
+		{
+			name: 'My Cousin Matt',
+			year: 2004,
+			finishPosition: 3,
+			dirtAbility: 92,
+			turfAbility: 20,
+			speed: 94,
+			stamina: 55,
+			runningStyle: RunningStyle.Stalker
+		},
+
+		{
+			name: 'Cajun Beat',
+			year: 2003,
+			finishPosition: 1,
+			dirtAbility: 94,
+			turfAbility: 20,
+			speed: 96,
+			stamina: 57,
+			runningStyle: RunningStyle.FrontRunner
+		},
+		{
+			name: 'Bluesthestandard',
+			year: 2003,
+			finishPosition: 2,
+			dirtAbility: 91,
+			turfAbility: 20,
+			speed: 94,
+			stamina: 55,
+			runningStyle: RunningStyle.Closer
+		},
+		{
+			name: 'Shake You Down',
+			year: 2003,
+			finishPosition: 3,
+			dirtAbility: 89,
+			turfAbility: 20,
+			speed: 93,
+			stamina: 54,
+			runningStyle: RunningStyle.Closer
+		},
+
+		{
+			name: 'Orientate',
+			year: 2002,
+			finishPosition: 1,
+			dirtAbility: 98,
+			turfAbility: 20,
+			speed: 99,
+			stamina: 60,
+			runningStyle: RunningStyle.FrontRunner
+		},
+		{
+			name: 'Thunderello',
+			year: 2002,
+			finishPosition: 2,
+			dirtAbility: 93,
+			turfAbility: 20,
+			speed: 95,
+			stamina: 56,
+			runningStyle: RunningStyle.FrontRunner
+		},
+		{
+			name: 'Crafty C. T.',
+			year: 2002,
+			finishPosition: 3,
+			dirtAbility: 90,
+			turfAbility: 20,
+			speed: 93,
+			stamina: 54,
+			runningStyle: RunningStyle.Stalker
+		},
+
+		{
+			name: 'Squirtle Squirt',
+			year: 2001,
+			finishPosition: 1,
+			dirtAbility: 96,
+			turfAbility: 20,
+			speed: 97,
+			stamina: 58,
+			runningStyle: RunningStyle.FrontRunner
+		},
+		{
+			name: 'Xtra Heat',
+			year: 2001,
+			finishPosition: 2,
+			dirtAbility: 94,
+			turfAbility: 20,
+			speed: 96,
+			stamina: 57,
+			runningStyle: RunningStyle.FrontRunner
+		},
+		{
+			name: 'Caller One',
+			year: 2001,
+			finishPosition: 3,
+			dirtAbility: 90,
+			turfAbility: 20,
+			speed: 93,
+			stamina: 54,
+			runningStyle: RunningStyle.FrontRunner
+		},
+
+		{
+			name: 'Kona Gold',
+			year: 2000,
+			finishPosition: 1,
+			dirtAbility: 99,
+			turfAbility: 20,
+			speed: 99,
+			stamina: 61,
+			runningStyle: RunningStyle.Closer
+		},
+		{
+			name: 'Honest Lady',
+			year: 2000,
+			finishPosition: 2,
+			dirtAbility: 95,
+			turfAbility: 20,
+			speed: 96,
+			stamina: 58,
+			runningStyle: RunningStyle.Stalker
+		},
+		{
+			name: 'Bet On Sunshine',
+			year: 2000,
+			finishPosition: 3,
+			dirtAbility: 92,
+			turfAbility: 20,
+			speed: 94,
+			stamina: 56,
+			runningStyle: RunningStyle.Closer
+		},
+
+		{
+			name: 'Artax',
+			year: 1999,
+			finishPosition: 1,
+			dirtAbility: 99,
+			turfAbility: 20,
+			speed: 99,
+			stamina: 61,
+			runningStyle: RunningStyle.FrontRunner
+		},
+		{
+			name: 'Kona Gold',
+			year: 1999,
+			finishPosition: 2,
+			dirtAbility: 96,
+			turfAbility: 20,
+			speed: 97,
+			stamina: 59,
+			runningStyle: RunningStyle.Closer
+		},
+		{
+			name: 'Big Jag',
+			year: 1999,
+			finishPosition: 3,
+			dirtAbility: 92,
+			turfAbility: 25,
+			speed: 94,
+			stamina: 55,
+			runningStyle: RunningStyle.Closer
+		},
+
+		{
+			name: 'Reraise',
+			year: 1998,
+			finishPosition: 1,
+			dirtAbility: 94,
+			turfAbility: 20,
+			speed: 95,
+			stamina: 57,
+			runningStyle: RunningStyle.Closer
+		},
+		{
+			name: 'Grand Slam',
+			year: 1998,
+			finishPosition: 2,
+			dirtAbility: 92,
+			turfAbility: 20,
+			speed: 94,
+			stamina: 56,
+			runningStyle: RunningStyle.FrontRunner
+		},
+		{
+			name: 'Kona Gold',
+			year: 1998,
+			finishPosition: 3,
+			dirtAbility: 90,
+			turfAbility: 20,
+			speed: 93,
+			stamina: 55,
+			runningStyle: RunningStyle.Closer
+		},
+
+		{
+			name: 'Elmhurst',
+			year: 1997,
+			finishPosition: 1,
+			dirtAbility: 94,
+			turfAbility: 20,
+			speed: 95,
+			stamina: 57,
+			runningStyle: RunningStyle.Closer
+		},
+		{
+			name: 'Hesabull',
+			year: 1997,
+			finishPosition: 2,
+			dirtAbility: 91,
+			turfAbility: 20,
+			speed: 94,
+			stamina: 55,
+			runningStyle: RunningStyle.FrontRunner
+		},
+		{
+			name: 'Bet On Sunshine',
+			year: 1997,
+			finishPosition: 3,
+			dirtAbility: 89,
+			turfAbility: 20,
+			speed: 92,
+			stamina: 54,
+			runningStyle: RunningStyle.Closer
+		},
+
+		{
+			name: 'Lit De Justice',
+			year: 1996,
+			finishPosition: 1,
+			dirtAbility: 96,
+			turfAbility: 25,
+			speed: 97,
+			stamina: 58,
+			runningStyle: RunningStyle.Closer
+		},
+		{
+			name: 'Paying Dues',
+			year: 1996,
+			finishPosition: 2,
+			dirtAbility: 92,
+			turfAbility: 20,
+			speed: 94,
+			stamina: 55,
+			runningStyle: RunningStyle.FrontRunner
+		},
+		{
+			name: 'Honour and Glory',
+			year: 1996,
+			finishPosition: 3,
+			dirtAbility: 90,
+			turfAbility: 20,
+			speed: 93,
+			stamina: 55,
+			runningStyle: RunningStyle.Stalker
+		},
+
+		{
+			name: 'Desert Stormer',
+			year: 1995,
+			finishPosition: 1,
+			dirtAbility: 95,
+			turfAbility: 20,
+			speed: 96,
+			stamina: 57,
+			runningStyle: RunningStyle.Closer
+		},
+		{
+			name: 'Mr. Greeley',
+			year: 1995,
+			finishPosition: 2,
+			dirtAbility: 92,
+			turfAbility: 20,
+			speed: 95,
+			stamina: 56,
+			runningStyle: RunningStyle.FrontRunner
+		},
+		{
+			name: 'Lit De Justice',
+			year: 1995,
+			finishPosition: 3,
+			dirtAbility: 90,
+			turfAbility: 25,
+			speed: 93,
+			stamina: 54,
+			runningStyle: RunningStyle.Closer
+		},
+
+		{
+			name: 'Cherokee Run',
+			year: 1994,
+			finishPosition: 1,
+			dirtAbility: 98,
+			turfAbility: 20,
+			speed: 98,
+			stamina: 60,
+			runningStyle: RunningStyle.Closer
+		},
+		{
+			name: 'Soviet Problem',
+			year: 1994,
+			finishPosition: 2,
+			dirtAbility: 94,
+			turfAbility: 20,
+			speed: 96,
+			stamina: 58,
+			runningStyle: RunningStyle.FrontRunner
+		},
+		{
+			name: 'Cardmania',
+			year: 1994,
+			finishPosition: 3,
+			dirtAbility: 91,
+			turfAbility: 20,
+			speed: 94,
+			stamina: 55,
+			runningStyle: RunningStyle.FrontRunner
+		},
+		{
+			name: 'Cardmania',
+			year: 1993,
+			finishPosition: 1,
+			dirtAbility: 96,
+			turfAbility: 20,
+			speed: 97,
+			stamina: 58,
+			runningStyle: RunningStyle.FrontRunner
+		},
+		{
+			name: 'Meafara',
+			year: 1993,
+			finishPosition: 2,
+			dirtAbility: 93,
+			turfAbility: 20,
+			speed: 95,
+			stamina: 56,
+			runningStyle: RunningStyle.FrontRunner
+		},
+		{
+			name: 'Gilded Time',
+			year: 1993,
+			finishPosition: 3,
+			dirtAbility: 90,
+			turfAbility: 20,
+			speed: 93,
+			stamina: 55,
+			runningStyle: RunningStyle.Stalker
+		},
+
+		{
+			name: 'Thirty Slews',
+			year: 1992,
+			finishPosition: 1,
+			dirtAbility: 95,
+			turfAbility: 20,
+			speed: 96,
+			stamina: 57,
+			runningStyle: RunningStyle.FrontRunner
+		},
+		{
+			name: 'Meafara',
+			year: 1992,
+			finishPosition: 2,
+			dirtAbility: 92,
+			turfAbility: 20,
+			speed: 94,
+			stamina: 56,
+			runningStyle: RunningStyle.FrontRunner
+		},
+		{
+			name: 'Rubiano',
+			year: 1992,
+			finishPosition: 3,
+			dirtAbility: 89,
+			turfAbility: 20,
+			speed: 92,
+			stamina: 54,
+			runningStyle: RunningStyle.Stalker
+		},
+
+		{
+			name: 'Sheikh Albadou',
+			year: 1991,
+			finishPosition: 1,
+			dirtAbility: 98,
+			turfAbility: 25,
+			speed: 99,
+			stamina: 59,
+			runningStyle: RunningStyle.Closer
+		},
+		{
+			name: 'Pleasant Tap',
+			year: 1991,
+			finishPosition: 2,
+			dirtAbility: 93,
+			turfAbility: 20,
+			speed: 94,
+			stamina: 57,
+			runningStyle: RunningStyle.Stalker
+		},
+		{
+			name: 'Robyn Dancer',
+			year: 1991,
+			finishPosition: 3,
+			dirtAbility: 89,
+			turfAbility: 20,
+			speed: 91,
+			stamina: 54,
+			runningStyle: RunningStyle.FrontRunner
+		},
+
+		{
+			name: 'Safely Kept',
+			year: 1990,
+			finishPosition: 1,
+			dirtAbility: 98,
+			turfAbility: 20,
+			speed: 99,
+			stamina: 59,
+			runningStyle: RunningStyle.FrontRunner
+		},
+		{
+			name: 'Dayjur',
+			year: 1990,
+			finishPosition: 2,
+			dirtAbility: 95,
+			turfAbility: 35,
+			speed: 98,
+			stamina: 57,
+			runningStyle: RunningStyle.FrontRunner
+		},
+		{
+			name: 'Black Tie Affair',
+			year: 1990,
+			finishPosition: 3,
+			dirtAbility: 91,
+			turfAbility: 20,
+			speed: 92,
+			stamina: 55,
+			runningStyle: RunningStyle.Stalker
+		},
+
+		{
+			name: 'Dancing Spree',
+			year: 1989,
+			finishPosition: 1,
+			dirtAbility: 95,
+			turfAbility: 25,
+			speed: 96,
+			stamina: 57,
+			runningStyle: RunningStyle.FrontRunner
+		},
+		{
+			name: 'Safely Kept',
+			year: 1989,
+			finishPosition: 2,
+			dirtAbility: 93,
+			turfAbility: 20,
+			speed: 95,
+			stamina: 56,
+			runningStyle: RunningStyle.FrontRunner
+		},
+		{
+			name: 'Dispersal',
+			year: 1989,
+			finishPosition: 3,
+			dirtAbility: 89,
+			turfAbility: 20,
+			speed: 91,
+			stamina: 54,
+			runningStyle: RunningStyle.Stalker
+		},
+
+		{
+			name: 'Gulch',
+			year: 1988,
+			finishPosition: 1,
+			dirtAbility: 99,
+			turfAbility: 20,
+			speed: 99,
+			stamina: 60,
+			runningStyle: RunningStyle.FrontRunner
+		},
+		{
+			name: 'Play The King',
+			year: 1988,
+			finishPosition: 2,
+			dirtAbility: 94,
+			turfAbility: 35,
+			speed: 95,
+			stamina: 56,
+			runningStyle: RunningStyle.Stalker
+		},
+		{
+			name: 'Afleet',
+			year: 1988,
+			finishPosition: 3,
+			dirtAbility: 91,
+			turfAbility: 20,
+			speed: 93,
+			stamina: 55,
+			runningStyle: RunningStyle.FrontRunner
+		},
+
+		{
+			name: 'Very Subtle',
+			year: 1987,
+			finishPosition: 1,
+			dirtAbility: 97,
+			turfAbility: 20,
+			speed: 99,
+			stamina: 58,
+			runningStyle: RunningStyle.FrontRunner
+		},
+		{
+			name: 'Groovy',
+			year: 1987,
+			finishPosition: 2,
+			dirtAbility: 94,
+			turfAbility: 20,
+			speed: 96,
+			stamina: 56,
+			runningStyle: RunningStyle.FrontRunner
+		},
+		{
+			name: 'Exclusive Enough',
+			year: 1987,
+			finishPosition: 3,
+			dirtAbility: 90,
+			turfAbility: 20,
+			speed: 92,
+			stamina: 54,
+			runningStyle: RunningStyle.Stalker
+		},
+
+		{
+			name: 'Smile',
+			year: 1986,
+			finishPosition: 1,
+			dirtAbility: 98,
+			turfAbility: 20,
+			speed: 98,
+			stamina: 59,
+			runningStyle: RunningStyle.FrontRunner
+		},
+		{
+			name: 'Pine Tree Lane',
+			year: 1986,
+			finishPosition: 2,
+			dirtAbility: 93,
+			turfAbility: 20,
+			speed: 95,
+			stamina: 56,
+			runningStyle: RunningStyle.FrontRunner
+		},
+		{
+			name: 'Bedside Promise',
+			year: 1986,
+			finishPosition: 3,
+			dirtAbility: 89,
+			turfAbility: 20,
+			speed: 91,
+			stamina: 54,
+			runningStyle: RunningStyle.Stalker
+		},
+
+		{
+			name: 'Precisionist',
+			year: 1985,
+			finishPosition: 1,
+			dirtAbility: 99,
+			turfAbility: 20,
+			speed: 100,
+			stamina: 58,
+			runningStyle: RunningStyle.FrontRunner
+		},
+		{
+			name: 'Smile',
+			year: 1985,
+			finishPosition: 2,
+			dirtAbility: 95,
+			turfAbility: 20,
+			speed: 97,
+			stamina: 57,
+			runningStyle: RunningStyle.FrontRunner
+		},
+		{
+			name: 'Mt. Livermore',
+			year: 1985,
+			finishPosition: 3,
+			dirtAbility: 90,
+			turfAbility: 20,
+			speed: 92,
+			stamina: 54,
+			runningStyle: RunningStyle.Stalker
+		},
+
+		{
+			name: 'Eillo',
+			year: 1984,
+			finishPosition: 1,
+			dirtAbility: 96,
+			turfAbility: 20,
+			speed: 97,
+			stamina: 58,
+			runningStyle: RunningStyle.Closer
+		},
+		{
+			name: 'Commemorate',
+			year: 1984,
+			finishPosition: 2,
+			dirtAbility: 92,
+			turfAbility: 20,
+			speed: 94,
+			stamina: 55,
+			runningStyle: RunningStyle.FrontRunner
+		},
+		{
+			name: 'Fighting Fit',
+			year: 1984,
+			finishPosition: 3,
+			dirtAbility: 88,
+			turfAbility: 20,
+			speed: 90,
+			stamina: 53,
+			runningStyle: RunningStyle.Stalker
 		}
 	],
 	'Turf Sprint': [
@@ -2495,6 +4998,98 @@ const horses: Record<string, DataHorse[]> = {
 			speed: 94,
 			stamina: 69,
 			runningStyle: RunningStyle.FrontRunner
+		},
+		{
+			name: 'California Flag',
+			year: 2009,
+			finishPosition: 1,
+			dirtAbility: 25,
+			turfAbility: 96,
+			speed: 98,
+			stamina: 52,
+			runningStyle: RunningStyle.FrontRunner
+		},
+		{
+			name: 'Gotta Have Her',
+			year: 2009,
+			finishPosition: 2,
+			dirtAbility: 20,
+			turfAbility: 93,
+			speed: 95,
+			stamina: 50,
+			runningStyle: RunningStyle.Closer
+		},
+		{
+			name: 'Cannonball',
+			year: 2009,
+			finishPosition: 3,
+			dirtAbility: 20,
+			turfAbility: 90,
+			speed: 93,
+			stamina: 49,
+			runningStyle: RunningStyle.Stalker
+		},
+
+		{
+			name: 'Desert Code',
+			year: 2008,
+			finishPosition: 1,
+			dirtAbility: 25,
+			turfAbility: 95,
+			speed: 97,
+			stamina: 51,
+			runningStyle: RunningStyle.Closer
+		},
+		{
+			name: 'Diabolical',
+			year: 2008,
+			finishPosition: 2,
+			dirtAbility: 35,
+			turfAbility: 92,
+			speed: 95,
+			stamina: 50,
+			runningStyle: RunningStyle.FrontRunner
+		},
+		{
+			name: 'Storm Treasure',
+			year: 2008,
+			finishPosition: 3,
+			dirtAbility: 20,
+			turfAbility: 89,
+			speed: 92,
+			stamina: 48,
+			runningStyle: RunningStyle.MidPack
+		},
+
+		{
+			name: 'Unbridled Sidney',
+			year: 2006,
+			finishPosition: 1,
+			dirtAbility: 20,
+			turfAbility: 94,
+			speed: 96,
+			stamina: 50,
+			runningStyle: RunningStyle.FrontRunner
+		},
+		{
+			name: 'Smart Enough',
+			year: 2006,
+			finishPosition: 2,
+			dirtAbility: 20,
+			turfAbility: 91,
+			speed: 93,
+			stamina: 48,
+			runningStyle: RunningStyle.Stalker
+		},
+		{
+			name: 'T.d. Vance',
+			year: 2006,
+			finishPosition: 3,
+			dirtAbility: 20,
+			turfAbility: 88,
+			speed: 91,
+			stamina: 47,
+			runningStyle: RunningStyle.Closer
 		}
 	],
 	Distaff: [
@@ -2992,6 +5587,811 @@ const horses: Record<string, DataHorse[]> = {
 			speed: 95,
 			stamina: 98,
 			runningStyle: RunningStyle.Stalker
+		},
+		{
+			name: 'Life Is Sweet',
+			year: 2009,
+			finishPosition: 1,
+			dirtAbility: 95,
+			turfAbility: 20,
+			speed: 88,
+			stamina: 93,
+			runningStyle: RunningStyle.Closer
+		},
+		{
+			name: 'Mushka',
+			year: 2009,
+			finishPosition: 2,
+			dirtAbility: 92,
+			turfAbility: 35,
+			speed: 87,
+			stamina: 91,
+			runningStyle: RunningStyle.Closer
+		},
+		{
+			name: 'Music Note',
+			year: 2009,
+			finishPosition: 3,
+			dirtAbility: 90,
+			turfAbility: 20,
+			speed: 86,
+			stamina: 90,
+			runningStyle: RunningStyle.Stalker
+		},
+
+		{
+			name: 'Zenyatta',
+			year: 2008,
+			finishPosition: 1,
+			dirtAbility: 99,
+			turfAbility: 25,
+			speed: 92,
+			stamina: 99,
+			runningStyle: RunningStyle.Closer
+		},
+		{
+			name: 'Cocoa Beach',
+			year: 2008,
+			finishPosition: 2,
+			dirtAbility: 94,
+			turfAbility: 20,
+			speed: 89,
+			stamina: 92,
+			runningStyle: RunningStyle.Stalker
+		},
+		{
+			name: 'Music Note',
+			year: 2008,
+			finishPosition: 3,
+			dirtAbility: 91,
+			turfAbility: 20,
+			speed: 87,
+			stamina: 90,
+			runningStyle: RunningStyle.Closer
+		},
+
+		{
+			name: 'Ginger Punch',
+			year: 2007,
+			finishPosition: 1,
+			dirtAbility: 97,
+			turfAbility: 20,
+			speed: 90,
+			stamina: 95,
+			runningStyle: RunningStyle.Closer
+		},
+		{
+			name: 'Hystericalady',
+			year: 2007,
+			finishPosition: 2,
+			dirtAbility: 94,
+			turfAbility: 20,
+			speed: 89,
+			stamina: 92,
+			runningStyle: RunningStyle.FrontRunner
+		},
+		{
+			name: 'Octave',
+			year: 2007,
+			finishPosition: 3,
+			dirtAbility: 91,
+			turfAbility: 20,
+			speed: 87,
+			stamina: 90,
+			runningStyle: RunningStyle.Closer
+		},
+
+		{
+			name: 'Round Pond',
+			year: 2006,
+			finishPosition: 1,
+			dirtAbility: 95,
+			turfAbility: 20,
+			speed: 88,
+			stamina: 93,
+			runningStyle: RunningStyle.Stalker
+		},
+		{
+			name: 'Happy Ticket',
+			year: 2006,
+			finishPosition: 2,
+			dirtAbility: 92,
+			turfAbility: 20,
+			speed: 87,
+			stamina: 91,
+			runningStyle: RunningStyle.Closer
+		},
+		{
+			name: 'Balletto',
+			year: 2006,
+			finishPosition: 3,
+			dirtAbility: 89,
+			turfAbility: 20,
+			speed: 85,
+			stamina: 89,
+			runningStyle: RunningStyle.Stalker
+		},
+
+		{
+			name: 'Pleasant Home',
+			year: 2005,
+			finishPosition: 1,
+			dirtAbility: 96,
+			turfAbility: 20,
+			speed: 89,
+			stamina: 94,
+			runningStyle: RunningStyle.Closer
+		},
+		{
+			name: 'Society Selection',
+			year: 2005,
+			finishPosition: 2,
+			dirtAbility: 93,
+			turfAbility: 20,
+			speed: 88,
+			stamina: 92,
+			runningStyle: RunningStyle.FrontRunner
+		},
+		{
+			name: 'Ashado',
+			year: 2005,
+			finishPosition: 3,
+			dirtAbility: 91,
+			turfAbility: 20,
+			speed: 87,
+			stamina: 91,
+			runningStyle: RunningStyle.Closer
+		},
+
+		{
+			name: 'Ashado',
+			year: 2004,
+			finishPosition: 1,
+			dirtAbility: 98,
+			turfAbility: 20,
+			speed: 91,
+			stamina: 96,
+			runningStyle: RunningStyle.Stalker
+		},
+		{
+			name: 'Storm Flag Flying',
+			year: 2004,
+			finishPosition: 2,
+			dirtAbility: 94,
+			turfAbility: 20,
+			speed: 88,
+			stamina: 92,
+			runningStyle: RunningStyle.Closer
+		},
+		{
+			name: 'Stellar Jayne',
+			year: 2004,
+			finishPosition: 3,
+			dirtAbility: 91,
+			turfAbility: 20,
+			speed: 87,
+			stamina: 90,
+			runningStyle: RunningStyle.Stalker
+		},
+
+		{
+			name: 'Adoration',
+			year: 2003,
+			finishPosition: 1,
+			dirtAbility: 95,
+			turfAbility: 20,
+			speed: 89,
+			stamina: 93,
+			runningStyle: RunningStyle.FrontRunner
+		},
+		{
+			name: 'Elloluv',
+			year: 2003,
+			finishPosition: 2,
+			dirtAbility: 92,
+			turfAbility: 25,
+			speed: 87,
+			stamina: 90,
+			runningStyle: RunningStyle.Stalker
+		},
+		{
+			name: 'Got Koko',
+			year: 2003,
+			finishPosition: 3,
+			dirtAbility: 89,
+			turfAbility: 20,
+			speed: 86,
+			stamina: 89,
+			runningStyle: RunningStyle.FrontRunner
+		},
+
+		{
+			name: 'Azeri',
+			year: 2002,
+			finishPosition: 1,
+			dirtAbility: 99,
+			turfAbility: 20,
+			speed: 92,
+			stamina: 98,
+			runningStyle: RunningStyle.Stalker
+		},
+		{
+			name: 'Farda Amiga',
+			year: 2002,
+			finishPosition: 2,
+			dirtAbility: 95,
+			turfAbility: 20,
+			speed: 89,
+			stamina: 93,
+			runningStyle: RunningStyle.Closer
+		},
+		{
+			name: 'Imperial Gesture',
+			year: 2002,
+			finishPosition: 3,
+			dirtAbility: 92,
+			turfAbility: 30,
+			speed: 88,
+			stamina: 91,
+			runningStyle: RunningStyle.Stalker
+		},
+
+		{
+			name: 'Unbridled Elaine',
+			year: 2001,
+			finishPosition: 1,
+			dirtAbility: 96,
+			turfAbility: 20,
+			speed: 89,
+			stamina: 94,
+			runningStyle: RunningStyle.Closer
+		},
+		{
+			name: 'Spain',
+			year: 2001,
+			finishPosition: 2,
+			dirtAbility: 93,
+			turfAbility: 20,
+			speed: 88,
+			stamina: 92,
+			runningStyle: RunningStyle.FrontRunner
+		},
+		{
+			name: 'Two Item Limit',
+			year: 2001,
+			finishPosition: 3,
+			dirtAbility: 90,
+			turfAbility: 20,
+			speed: 86,
+			stamina: 89,
+			runningStyle: RunningStyle.Stalker
+		},
+
+		{
+			name: 'Spain',
+			year: 2000,
+			finishPosition: 1,
+			dirtAbility: 97,
+			turfAbility: 20,
+			speed: 91,
+			stamina: 95,
+			runningStyle: RunningStyle.FrontRunner
+		},
+		{
+			name: 'Surfside',
+			year: 2000,
+			finishPosition: 2,
+			dirtAbility: 94,
+			turfAbility: 20,
+			speed: 89,
+			stamina: 93,
+			runningStyle: RunningStyle.Stalker
+		},
+		{
+			name: 'Heritage Of Gold',
+			year: 2000,
+			finishPosition: 3,
+			dirtAbility: 91,
+			turfAbility: 20,
+			speed: 87,
+			stamina: 90,
+			runningStyle: RunningStyle.Closer
+		},
+
+		{
+			name: 'Beautiful Pleasure',
+			year: 1999,
+			finishPosition: 1,
+			dirtAbility: 97,
+			turfAbility: 20,
+			speed: 90,
+			stamina: 95,
+			runningStyle: RunningStyle.Stalker
+		},
+		{
+			name: 'Banshee Breeze',
+			year: 1999,
+			finishPosition: 2,
+			dirtAbility: 94,
+			turfAbility: 20,
+			speed: 89,
+			stamina: 93,
+			runningStyle: RunningStyle.Closer
+		},
+		{
+			name: 'Heritage Of Gold',
+			year: 1999,
+			finishPosition: 3,
+			dirtAbility: 91,
+			turfAbility: 20,
+			speed: 87,
+			stamina: 90,
+			runningStyle: RunningStyle.Closer
+		},
+
+		{
+			name: 'Escena',
+			year: 1998,
+			finishPosition: 1,
+			dirtAbility: 98,
+			turfAbility: 20,
+			speed: 91,
+			stamina: 96,
+			runningStyle: RunningStyle.Closer
+		},
+		{
+			name: 'Banshee Breeze',
+			year: 1998,
+			finishPosition: 2,
+			dirtAbility: 94,
+			turfAbility: 20,
+			speed: 89,
+			stamina: 93,
+			runningStyle: RunningStyle.Closer
+		},
+		{
+			name: 'Keeper Hill',
+			year: 1998,
+			finishPosition: 3,
+			dirtAbility: 90,
+			turfAbility: 20,
+			speed: 87,
+			stamina: 90,
+			runningStyle: RunningStyle.Stalker
+		},
+
+		{
+			name: 'Ajina',
+			year: 1997,
+			finishPosition: 1,
+			dirtAbility: 97,
+			turfAbility: 20,
+			speed: 91,
+			stamina: 95,
+			runningStyle: RunningStyle.Closer
+		},
+		{
+			name: 'Sharp Cat',
+			year: 1997,
+			finishPosition: 2,
+			dirtAbility: 95,
+			turfAbility: 20,
+			speed: 90,
+			stamina: 93,
+			runningStyle: RunningStyle.FrontRunner
+		},
+		{
+			name: 'Escena',
+			year: 1997,
+			finishPosition: 3,
+			dirtAbility: 92,
+			turfAbility: 20,
+			speed: 88,
+			stamina: 91,
+			runningStyle: RunningStyle.Closer
+		},
+
+		{
+			name: 'Jewel Princess',
+			year: 1996,
+			finishPosition: 1,
+			dirtAbility: 97,
+			turfAbility: 20,
+			speed: 90,
+			stamina: 95,
+			runningStyle: RunningStyle.Closer
+		},
+		{
+			name: "Serena's Song",
+			year: 1996,
+			finishPosition: 2,
+			dirtAbility: 95,
+			turfAbility: 25,
+			speed: 90,
+			stamina: 94,
+			runningStyle: RunningStyle.Stalker
+		},
+		{
+			name: 'Different',
+			year: 1996,
+			finishPosition: 3,
+			dirtAbility: 90,
+			turfAbility: 20,
+			speed: 87,
+			stamina: 90,
+			runningStyle: RunningStyle.Closer
+		},
+
+		{
+			name: 'Inside Information',
+			year: 1995,
+			finishPosition: 1,
+			dirtAbility: 99,
+			turfAbility: 20,
+			speed: 93,
+			stamina: 98,
+			runningStyle: RunningStyle.Stalker
+		},
+		{
+			name: 'Heavenly Prize',
+			year: 1995,
+			finishPosition: 2,
+			dirtAbility: 96,
+			turfAbility: 20,
+			speed: 91,
+			stamina: 95,
+			runningStyle: RunningStyle.Closer
+		},
+		{
+			name: 'Lakeway',
+			year: 1995,
+			finishPosition: 3,
+			dirtAbility: 92,
+			turfAbility: 20,
+			speed: 89,
+			stamina: 92,
+			runningStyle: RunningStyle.Closer
+		},
+
+		{
+			name: 'One Dreamer',
+			year: 1994,
+			finishPosition: 1,
+			dirtAbility: 95,
+			turfAbility: 20,
+			speed: 88,
+			stamina: 93,
+			runningStyle: RunningStyle.Closer
+		},
+		{
+			name: 'Heavenly Prize',
+			year: 1994,
+			finishPosition: 2,
+			dirtAbility: 93,
+			turfAbility: 20,
+			speed: 88,
+			stamina: 92,
+			runningStyle: RunningStyle.Stalker
+		},
+		{
+			name: 'Miss Dominique',
+			year: 1994,
+			finishPosition: 3,
+			dirtAbility: 89,
+			turfAbility: 20,
+			speed: 85,
+			stamina: 89,
+			runningStyle: RunningStyle.FrontRunner
+		},
+
+		{
+			name: 'Hollywood Wildcat',
+			year: 1993,
+			finishPosition: 1,
+			dirtAbility: 98,
+			turfAbility: 20,
+			speed: 92,
+			stamina: 96,
+			runningStyle: RunningStyle.FrontRunner
+		},
+		{
+			name: 'Paseana',
+			year: 1993,
+			finishPosition: 2,
+			dirtAbility: 95,
+			turfAbility: 20,
+			speed: 90,
+			stamina: 94,
+			runningStyle: RunningStyle.Closer
+		},
+		{
+			name: 'Re Toss',
+			year: 1993,
+			finishPosition: 3,
+			dirtAbility: 90,
+			turfAbility: 20,
+			speed: 87,
+			stamina: 90,
+			runningStyle: RunningStyle.Stalker
+		},
+
+		{
+			name: 'Paseana',
+			year: 1992,
+			finishPosition: 1,
+			dirtAbility: 98,
+			turfAbility: 20,
+			speed: 91,
+			stamina: 97,
+			runningStyle: RunningStyle.Closer
+		},
+		{
+			name: 'Versailles Treaty',
+			year: 1992,
+			finishPosition: 2,
+			dirtAbility: 95,
+			turfAbility: 20,
+			speed: 89,
+			stamina: 94,
+			runningStyle: RunningStyle.Stalker
+		},
+		{
+			name: 'Magical Maiden',
+			year: 1992,
+			finishPosition: 3,
+			dirtAbility: 91,
+			turfAbility: 20,
+			speed: 87,
+			stamina: 91,
+			runningStyle: RunningStyle.FrontRunner
+		},
+
+		{
+			name: 'Dance Smartly',
+			year: 1991,
+			finishPosition: 1,
+			dirtAbility: 99,
+			turfAbility: 35,
+			speed: 92,
+			stamina: 98,
+			runningStyle: RunningStyle.Stalker
+		},
+		{
+			name: 'Versailles Treaty',
+			year: 1991,
+			finishPosition: 2,
+			dirtAbility: 95,
+			turfAbility: 20,
+			speed: 89,
+			stamina: 94,
+			runningStyle: RunningStyle.Stalker
+		},
+		{
+			name: 'Brought To Mind',
+			year: 1991,
+			finishPosition: 3,
+			dirtAbility: 90,
+			turfAbility: 20,
+			speed: 86,
+			stamina: 90,
+			runningStyle: RunningStyle.Closer
+		},
+
+		{
+			name: 'Bayakoa',
+			year: 1990,
+			finishPosition: 1,
+			dirtAbility: 99,
+			turfAbility: 20,
+			speed: 92,
+			stamina: 98,
+			runningStyle: RunningStyle.Closer
+		},
+		{
+			name: 'Colonial Waters',
+			year: 1990,
+			finishPosition: 2,
+			dirtAbility: 94,
+			turfAbility: 20,
+			speed: 89,
+			stamina: 93,
+			runningStyle: RunningStyle.FrontRunner
+		},
+		{
+			name: 'Valay Maid',
+			year: 1990,
+			finishPosition: 3,
+			dirtAbility: 90,
+			turfAbility: 20,
+			speed: 86,
+			stamina: 90,
+			runningStyle: RunningStyle.Stalker
+		},
+
+		{
+			name: 'Bayakoa',
+			year: 1989,
+			finishPosition: 1,
+			dirtAbility: 99,
+			turfAbility: 20,
+			speed: 93,
+			stamina: 98,
+			runningStyle: RunningStyle.Closer
+		},
+		{
+			name: 'Gorgeous',
+			year: 1989,
+			finishPosition: 2,
+			dirtAbility: 95,
+			turfAbility: 20,
+			speed: 90,
+			stamina: 94,
+			runningStyle: RunningStyle.Stalker
+		},
+		{
+			name: 'Open Mind',
+			year: 1989,
+			finishPosition: 3,
+			dirtAbility: 92,
+			turfAbility: 20,
+			speed: 89,
+			stamina: 92,
+			runningStyle: RunningStyle.FrontRunner
+		},
+
+		{
+			name: 'Personal Ensign',
+			year: 1988,
+			finishPosition: 1,
+			dirtAbility: 100,
+			turfAbility: 20,
+			speed: 92,
+			stamina: 100,
+			runningStyle: RunningStyle.Closer
+		},
+		{
+			name: 'Winning Colors',
+			year: 1988,
+			finishPosition: 2,
+			dirtAbility: 96,
+			turfAbility: 20,
+			speed: 92,
+			stamina: 95,
+			runningStyle: RunningStyle.FrontRunner
+		},
+		{
+			name: 'Goodbye Halo',
+			year: 1988,
+			finishPosition: 3,
+			dirtAbility: 92,
+			turfAbility: 20,
+			speed: 88,
+			stamina: 91,
+			runningStyle: RunningStyle.Stalker
+		},
+
+		{
+			name: 'Sacahuista',
+			year: 1987,
+			finishPosition: 1,
+			dirtAbility: 97,
+			turfAbility: 20,
+			speed: 90,
+			stamina: 96,
+			runningStyle: RunningStyle.Closer
+		},
+		{
+			name: 'Clabber Girl',
+			year: 1987,
+			finishPosition: 2,
+			dirtAbility: 94,
+			turfAbility: 20,
+			speed: 88,
+			stamina: 93,
+			runningStyle: RunningStyle.Closer
+		},
+		{
+			name: 'Oueee Bebe',
+			year: 1987,
+			finishPosition: 3,
+			dirtAbility: 90,
+			turfAbility: 20,
+			speed: 86,
+			stamina: 90,
+			runningStyle: RunningStyle.Stalker
+		},
+
+		{
+			name: "Lady's Secret",
+			year: 1986,
+			finishPosition: 1,
+			dirtAbility: 100,
+			turfAbility: 20,
+			speed: 94,
+			stamina: 99,
+			runningStyle: RunningStyle.FrontRunner
+		},
+		{
+			name: "Fran's Valentine",
+			year: 1986,
+			finishPosition: 2,
+			dirtAbility: 94,
+			turfAbility: 25,
+			speed: 88,
+			stamina: 93,
+			runningStyle: RunningStyle.Closer
+		},
+		{
+			name: 'Outstandingly',
+			year: 1986,
+			finishPosition: 3,
+			dirtAbility: 90,
+			turfAbility: 20,
+			speed: 86,
+			stamina: 90,
+			runningStyle: RunningStyle.Stalker
+		},
+
+		{
+			name: "Life's Magic",
+			year: 1985,
+			finishPosition: 1,
+			dirtAbility: 98,
+			turfAbility: 20,
+			speed: 91,
+			stamina: 97,
+			runningStyle: RunningStyle.Stalker
+		},
+		{
+			name: "Lady's Secret",
+			year: 1985,
+			finishPosition: 2,
+			dirtAbility: 95,
+			turfAbility: 20,
+			speed: 91,
+			stamina: 95,
+			runningStyle: RunningStyle.FrontRunner
+		},
+		{
+			name: 'Dontstop Themusic',
+			year: 1985,
+			finishPosition: 3,
+			dirtAbility: 90,
+			turfAbility: 20,
+			speed: 86,
+			stamina: 90,
+			runningStyle: RunningStyle.Closer
+		},
+
+		{
+			name: 'Princess Rooney',
+			year: 1984,
+			finishPosition: 1,
+			dirtAbility: 99,
+			turfAbility: 20,
+			speed: 93,
+			stamina: 98,
+			runningStyle: RunningStyle.FrontRunner
+		},
+		{
+			name: "Life's Magic",
+			year: 1984,
+			finishPosition: 2,
+			dirtAbility: 95,
+			turfAbility: 20,
+			speed: 90,
+			stamina: 95,
+			runningStyle: RunningStyle.Stalker
+		},
+		{
+			name: 'Adored',
+			year: 1984,
+			finishPosition: 3,
+			dirtAbility: 89,
+			turfAbility: 20,
+			speed: 85,
+			stamina: 89,
+			runningStyle: RunningStyle.Closer
 		}
 	],
 	'Filly and Mare Sprint': [
@@ -3489,6 +6889,98 @@ const horses: Record<string, DataHorse[]> = {
 			speed: 92,
 			stamina: 83,
 			runningStyle: RunningStyle.Stalker
+		},
+		{
+			name: 'Informed Decision',
+			year: 2009,
+			finishPosition: 1,
+			dirtAbility: 93,
+			turfAbility: 22,
+			speed: 95,
+			stamina: 78,
+			runningStyle: RunningStyle.Stalker
+		},
+		{
+			name: 'Ventura',
+			year: 2009,
+			finishPosition: 2,
+			dirtAbility: 90,
+			turfAbility: 86,
+			speed: 94,
+			stamina: 77,
+			runningStyle: RunningStyle.Closer
+		},
+		{
+			name: 'Free Flying Soul',
+			year: 2009,
+			finishPosition: 3,
+			dirtAbility: 86,
+			turfAbility: 18,
+			speed: 90,
+			stamina: 73,
+			runningStyle: RunningStyle.Stalker
+		},
+
+		{
+			name: 'Ventura',
+			year: 2008,
+			finishPosition: 1,
+			dirtAbility: 92,
+			turfAbility: 90,
+			speed: 96,
+			stamina: 78,
+			runningStyle: RunningStyle.Closer
+		},
+		{
+			name: 'Indian Blessing',
+			year: 2008,
+			finishPosition: 2,
+			dirtAbility: 89,
+			turfAbility: 20,
+			speed: 95,
+			stamina: 74,
+			runningStyle: RunningStyle.FrontRunner
+		},
+		{
+			name: 'Zaftig',
+			year: 2008,
+			finishPosition: 3,
+			dirtAbility: 85,
+			turfAbility: 15,
+			speed: 90,
+			stamina: 72,
+			runningStyle: RunningStyle.Stalker
+		},
+
+		{
+			name: 'Maryfield',
+			year: 2007,
+			finishPosition: 1,
+			dirtAbility: 90,
+			turfAbility: 12,
+			speed: 93,
+			stamina: 72,
+			runningStyle: RunningStyle.Closer
+		},
+		{
+			name: 'Miraculous Miss',
+			year: 2007,
+			finishPosition: 2,
+			dirtAbility: 87,
+			turfAbility: 10,
+			speed: 91,
+			stamina: 71,
+			runningStyle: RunningStyle.MidPack
+		},
+		{
+			name: 'Miss Macy Sue',
+			year: 2007,
+			finishPosition: 3,
+			dirtAbility: 84,
+			turfAbility: 8,
+			speed: 89,
+			stamina: 70,
+			runningStyle: RunningStyle.FrontRunner
 		}
 	],
 	'Filly and Mare Turf': [
@@ -3985,6 +7477,346 @@ const horses: Record<string, DataHorse[]> = {
 			turfAbility: 92,
 			speed: 87,
 			stamina: 95,
+			runningStyle: RunningStyle.Closer
+		},
+		{
+			name: 'Midday',
+			year: 2009,
+			finishPosition: 1,
+			dirtAbility: 15,
+			turfAbility: 95,
+			speed: 91,
+			stamina: 95,
+			runningStyle: RunningStyle.Stalker
+		},
+		{
+			name: 'Pure Clan',
+			year: 2009,
+			finishPosition: 2,
+			dirtAbility: 12,
+			turfAbility: 92,
+			speed: 89,
+			stamina: 93,
+			runningStyle: RunningStyle.Closer
+		},
+		{
+			name: 'Forever Together',
+			year: 2009,
+			finishPosition: 3,
+			dirtAbility: 10,
+			turfAbility: 89,
+			speed: 87,
+			stamina: 92,
+			runningStyle: RunningStyle.Closer
+		},
+
+		{
+			name: 'Forever Together',
+			year: 2008,
+			finishPosition: 1,
+			dirtAbility: 12,
+			turfAbility: 94,
+			speed: 90,
+			stamina: 94,
+			runningStyle: RunningStyle.Closer
+		},
+		{
+			name: 'Sealy Hill',
+			year: 2008,
+			finishPosition: 2,
+			dirtAbility: 10,
+			turfAbility: 91,
+			speed: 88,
+			stamina: 92,
+			runningStyle: RunningStyle.MidPack
+		},
+		{
+			name: 'Wait A While',
+			year: 2008,
+			finishPosition: 3,
+			dirtAbility: 10,
+			turfAbility: 88,
+			speed: 87,
+			stamina: 90,
+			runningStyle: RunningStyle.Closer
+		},
+
+		{
+			name: 'Lahudood',
+			year: 2007,
+			finishPosition: 1,
+			dirtAbility: 10,
+			turfAbility: 93,
+			speed: 88,
+			stamina: 95,
+			runningStyle: RunningStyle.Closer
+		},
+		{
+			name: 'Honey Ryder',
+			year: 2007,
+			finishPosition: 2,
+			dirtAbility: 10,
+			turfAbility: 90,
+			speed: 87,
+			stamina: 93,
+			runningStyle: RunningStyle.Stalker
+		},
+		{
+			name: 'Passage Of Time',
+			year: 2007,
+			finishPosition: 3,
+			dirtAbility: 8,
+			turfAbility: 87,
+			speed: 86,
+			stamina: 92,
+			runningStyle: RunningStyle.Closer
+		},
+
+		{
+			name: 'Ouija Board',
+			year: 2006,
+			finishPosition: 1,
+			dirtAbility: 10,
+			turfAbility: 97,
+			speed: 92,
+			stamina: 97,
+			runningStyle: RunningStyle.Stalker
+		},
+		{
+			name: 'Film Maker',
+			year: 2006,
+			finishPosition: 2,
+			dirtAbility: 8,
+			turfAbility: 91,
+			speed: 87,
+			stamina: 94,
+			runningStyle: RunningStyle.Closer
+		},
+		{
+			name: 'Honey Ryder',
+			year: 2006,
+			finishPosition: 3,
+			dirtAbility: 8,
+			turfAbility: 88,
+			speed: 86,
+			stamina: 92,
+			runningStyle: RunningStyle.Stalker
+		},
+
+		{
+			name: 'Intercontinental',
+			year: 2005,
+			finishPosition: 1,
+			dirtAbility: 10,
+			turfAbility: 94,
+			speed: 91,
+			stamina: 91,
+			runningStyle: RunningStyle.FrontRunner
+		},
+		{
+			name: 'Ouija Board',
+			year: 2005,
+			finishPosition: 2,
+			dirtAbility: 10,
+			turfAbility: 93,
+			speed: 90,
+			stamina: 95,
+			runningStyle: RunningStyle.Stalker
+		},
+		{
+			name: 'Film Maker',
+			year: 2005,
+			finishPosition: 3,
+			dirtAbility: 8,
+			turfAbility: 89,
+			speed: 86,
+			stamina: 92,
+			runningStyle: RunningStyle.Closer
+		},
+
+		{
+			name: 'Ouija Board',
+			year: 2004,
+			finishPosition: 1,
+			dirtAbility: 10,
+			turfAbility: 96,
+			speed: 91,
+			stamina: 96,
+			runningStyle: RunningStyle.Stalker
+		},
+		{
+			name: 'Film Maker',
+			year: 2004,
+			finishPosition: 2,
+			dirtAbility: 8,
+			turfAbility: 90,
+			speed: 87,
+			stamina: 93,
+			runningStyle: RunningStyle.Closer
+		},
+		{
+			name: 'Wonder Again',
+			year: 2004,
+			finishPosition: 3,
+			dirtAbility: 8,
+			turfAbility: 87,
+			speed: 85,
+			stamina: 90,
+			runningStyle: RunningStyle.MidPack
+		},
+
+		{
+			name: 'Islington',
+			year: 2003,
+			finishPosition: 1,
+			dirtAbility: 10,
+			turfAbility: 95,
+			speed: 92,
+			stamina: 94,
+			runningStyle: RunningStyle.Closer
+		},
+		{
+			name: "L' Ancresse",
+			year: 2003,
+			finishPosition: 2,
+			dirtAbility: 8,
+			turfAbility: 91,
+			speed: 88,
+			stamina: 92,
+			runningStyle: RunningStyle.Stalker
+		},
+		{
+			name: 'Yesterday',
+			year: 2003,
+			finishPosition: 3,
+			dirtAbility: 8,
+			turfAbility: 88,
+			speed: 86,
+			stamina: 90,
+			runningStyle: RunningStyle.MidPack
+		},
+
+		{
+			name: 'Starine',
+			year: 2002,
+			finishPosition: 1,
+			dirtAbility: 10,
+			turfAbility: 93,
+			speed: 90,
+			stamina: 91,
+			runningStyle: RunningStyle.FrontRunner
+		},
+		{
+			name: 'Banks Hill',
+			year: 2002,
+			finishPosition: 2,
+			dirtAbility: 8,
+			turfAbility: 92,
+			speed: 89,
+			stamina: 91,
+			runningStyle: RunningStyle.Stalker
+		},
+		{
+			name: 'Islington',
+			year: 2002,
+			finishPosition: 3,
+			dirtAbility: 8,
+			turfAbility: 89,
+			speed: 87,
+			stamina: 90,
+			runningStyle: RunningStyle.Closer
+		},
+
+		{
+			name: 'Banks Hill',
+			year: 2001,
+			finishPosition: 1,
+			dirtAbility: 10,
+			turfAbility: 95,
+			speed: 91,
+			stamina: 92,
+			runningStyle: RunningStyle.Stalker
+		},
+		{
+			name: 'Spook Express',
+			year: 2001,
+			finishPosition: 2,
+			dirtAbility: 8,
+			turfAbility: 88,
+			speed: 86,
+			stamina: 89,
+			runningStyle: RunningStyle.Closer
+		},
+		{
+			name: 'Spring Oak',
+			year: 2001,
+			finishPosition: 3,
+			dirtAbility: 8,
+			turfAbility: 85,
+			speed: 84,
+			stamina: 88,
+			runningStyle: RunningStyle.MidPack
+		},
+
+		{
+			name: 'Perfect Sting',
+			year: 2000,
+			finishPosition: 1,
+			dirtAbility: 12,
+			turfAbility: 93,
+			speed: 90,
+			stamina: 92,
+			runningStyle: RunningStyle.Closer
+		},
+		{
+			name: 'Tout Charmant',
+			year: 2000,
+			finishPosition: 2,
+			dirtAbility: 10,
+			turfAbility: 89,
+			speed: 87,
+			stamina: 90,
+			runningStyle: RunningStyle.FrontRunner
+		},
+		{
+			name: 'Catella',
+			year: 2000,
+			finishPosition: 3,
+			dirtAbility: 8,
+			turfAbility: 86,
+			speed: 84,
+			stamina: 89,
+			runningStyle: RunningStyle.Stalker
+		},
+
+		{
+			name: 'Soaring Softly',
+			year: 1999,
+			finishPosition: 1,
+			dirtAbility: 10,
+			turfAbility: 92,
+			speed: 89,
+			stamina: 91,
+			runningStyle: RunningStyle.Stalker
+		},
+		{
+			name: 'Coretta',
+			year: 1999,
+			finishPosition: 2,
+			dirtAbility: 8,
+			turfAbility: 89,
+			speed: 87,
+			stamina: 90,
+			runningStyle: RunningStyle.Closer
+		},
+		{
+			name: 'Zomaradah',
+			year: 1999,
+			finishPosition: 3,
+			dirtAbility: 8,
+			turfAbility: 86,
+			speed: 85,
+			stamina: 88,
 			runningStyle: RunningStyle.Closer
 		}
 	]
