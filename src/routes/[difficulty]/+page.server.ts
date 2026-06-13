@@ -1,7 +1,10 @@
 import type { PageServerLoad } from './$types';
 import gameData from '$lib/server/data/gameData';
 
-export const load = (async ({ params }) => {
+export const load = (async ({ params, url }) => {
+	const startYear = Number(url.searchParams.get('startYear'));
+	const endYear = Number(url.searchParams.get('endYear'));
+
 	const horsesByRace = { ...gameData.horses };
 	// Randomly grab 2 horses from each race for each round, The new object will be an array of arrays with 2 horses from each race and one round per race.
 	// e.g. 8 races is 8 arrays each with 16 horses
@@ -16,7 +19,10 @@ export const load = (async ({ params }) => {
 		Object.entries(availableHorsesByRace).forEach(([raceName, horses]) => {
 			const shuffledHorses = [...horses].sort(() => 0.5 - Math.random());
 			const uniqueAvailableHorses = shuffledHorses.filter(
-				(horse) => !usedHorseNames.has(horse.name)
+				(horse) =>
+					!usedHorseNames.has(horse.name) &&
+					(!startYear || horse.year >= startYear) &&
+					(!endYear || horse.year <= endYear)
 			);
 			const horsesToUse = uniqueAvailableHorses.slice(0, 2);
 			horsesToUse.forEach((horse) => usedHorseNames.add(horse.name));
@@ -46,10 +52,17 @@ export const load = (async ({ params }) => {
 		difficultyAsInt: params.difficulty === 'easy' ? 1 : params.difficulty === 'medium' ? 2 : 3,
 		races: gameData.races,
 		jockeys: [...gameData.jockeys]
+			.filter(
+				(jockey) => (!startYear || jockey.year >= startYear) && (!endYear || jockey.year <= endYear)
+			)
 			.sort(() => 0.5 - Math.random())
 			.slice(0, 10)
 			.map((jockey) => ({ name: jockey.name, year: jockey.year })),
 		trainers: [...gameData.trainers]
+			.filter(
+				(trainer) =>
+					(!startYear || trainer.year >= startYear) && (!endYear || trainer.year <= endYear)
+			)
 			.sort(() => 0.5 - Math.random())
 			.slice(0, 10)
 			.map((trainer) => ({ name: trainer.name, year: trainer.year }))

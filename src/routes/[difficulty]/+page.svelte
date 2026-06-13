@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { goto } from '$app/navigation';
 	import gameSession from '$lib/stores/gameSession';
-	import { RunningStyle, Surface } from '$lib/types/enums';
+	import { RunningStyle } from '$lib/types/enums';
 	import type { PageProps } from './$types';
 
 	type SelectionOption = {

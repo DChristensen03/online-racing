@@ -3,10 +3,14 @@
 	import { clearGameSession } from '$lib/stores/gameSession';
 
 	let difficulty = $state('Easy');
+	let startYear = 2010;
+	let endYear: number | null = null;
 
 	const startGame = () => {
 		clearGameSession();
-		goto(`/${difficulty.toLowerCase()}`);
+		goto(
+			`/${difficulty.toLowerCase()}?startYear=${startYear}${endYear ? `&endYear=${endYear}` : ''}`
+		);
 	};
 </script>
 
@@ -37,6 +41,17 @@
 				onclick={() => (difficulty = 'Hard')}>Hard</button
 			>
 		</div>
+	</div>
+	<div id="era" class="mx-auto mb-4">
+		<select class="select select-lg rounded-lg text-xl">
+			<option selected onselect={() => ((startYear = 2010), (endYear = null))}
+				>2010 to Present</option
+			>
+			<option onselect={() => ((startYear = 2000), (endYear = 2009))}>2000 to 2009</option>
+			<option onselect={() => ((startYear = 1990), (endYear = 1999))}>1990 to 1999</option>
+			<option onselect={() => ((startYear = 1980), (endYear = 1989))}>1980 to 1989</option>
+			<option onselect={() => ((startYear = 1984), (endYear = null))}>All Time</option>
+		</select>
 	</div>
 	<div class="flex flex-col items-center gap-4">
 		<button class="btn btn-lg btn-secondary w-42" onclick={startGame}>Start</button>
