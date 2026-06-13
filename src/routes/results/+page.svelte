@@ -8,7 +8,7 @@
 	type RaceFromServer = {
 		raceName: string;
 		race: { distance: string; surface: string };
-		results: { name: string; finishPosition: number }[];
+		results: { name: string; finishPosition: number; year: number }[];
 		points: number;
 		playerHorse?: { name: string };
 	};
@@ -17,6 +17,7 @@
 		name: string;
 		finishPosition: number;
 		playerHorse: boolean;
+		year: number;
 	};
 
 	type RaceReveal = {
@@ -227,7 +228,8 @@
 					.map((horse) => ({
 						name: horse.name,
 						finishPosition: horse.finishPosition,
-						playerHorse: horse.name === raceObj.playerHorse?.name
+						playerHorse: horse.name === raceObj.playerHorse?.name,
+						year: horse.year
 					}))
 					.sort((a, b) => a.finishPosition - b.finishPosition);
 
@@ -277,7 +279,7 @@
 					</div>
 					<div class="min-h-0 flex-1 overflow-y-auto">
 						<ul class="mt-3 space-y-1">
-							{#each displayRace.horses as horse, index (horse.name)}
+							{#each displayRace.horses as horse, index (`${horse.name}, ${horse.year}`)}
 								<li
 									animate:flip={{ duration: 650 }}
 									class="bg-base-200 flex items-center justify-between rounded-lg p-1 transition-all duration-500"
@@ -287,7 +289,7 @@
 										<span
 											class="text-base-content font-semibold text-xs {horse.playerHorse
 												? 'text-primary'
-												: ''}">{horse.name}</span
+												: ''}">{horse.name} • {horse.year}</span
 										>
 										{#if horse.playerHorse}
 											<span class="badge badge-primary badge-xs">Player</span>
